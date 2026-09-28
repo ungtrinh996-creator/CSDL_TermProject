@@ -22,11 +22,11 @@ The company currently relies on spreadsheets and paper logs. This causes schedul
 The database covers seven main operational areas:
 1. **Projects:** Client contracts, job sites, phases, and task schedules.
 2. **Workforce:** Job roles, reporting hierarchy, certifications, and task assignments.
-3. **Equipment:** Owned and leased machinery, site deployments, run hours, and maintenance logs.
+3. **Equipment:** Owned and rented machinery, site deployments, run hours, and maintenance logs.
 4. **Materials:** Suppliers, purchase orders, site deliveries, and stock levels.
 5. **Subcontractors:** Trade specialties, contract agreements, and safety ratings.
 6. **Project costs:** Budget tracking against spending on labor, equipment, materials, and subcontracts.
-7. **Safety:** Safety rules, inspection scores, and incident reports.
+7. **Safety:** Safety audits, inspection scores, and incident reports.
 
 ---
 
@@ -50,7 +50,7 @@ The database covers seven main operational areas:
 13. `INCIDENT_REPORT`: Logs of workplace accidents, equipment damage, or near-misses.
 
 #### Weak entity sets
-1. `DEPENDENT`: Family members of an employee for benefits.
+1. `DEPENDENT`: Family members of an employee for benefits and emergency contact.
    - Identifying entity: `EMPLOYEE`
    - Identifying relationship: `HAS_DEPENDENT`
    - Partial key: `DependentName`
@@ -128,17 +128,19 @@ The database covers seven main operational areas:
 | `LocationCoordinates` | Composite | Composed of `Latitude`, `Longitude` |
 | `Address` | Composite | Composed of `StreetAddress`, `District`, `City_Province` |
 | `EnvironmentalPermit` | Simple | Environmental permit number |
+| `SiteStatus` | Simple | Operating state (Preparation, Active, Handed_Over) |
 
 ##### 6. `TASK`
 | Attribute | Type | Description |
 | :--- | :--- | :--- |
 | `TaskID` | Primary Key | Unique task identifier |
 | `TaskName` | Simple | Task name (Pour pile B12) |
-| `PlannedDurationHours` | Simple | Estimated hours |
-| `ActualHoursLogged` | Derived | Sum of worker hours logged on this task |
+| `EstimatedHours` | Simple | Estimated work hours |
+| `ActualHours` | Derived | Sum of worker hours logged on this task |
 | `ScheduledStartDate` | Simple | Scheduled start date |
 | `ScheduledEndDate` | Simple | Scheduled end date |
-| `PriorityLevel` | Simple | Low, Medium, High, Critical-Path |
+| `ActualEndDate` | Simple | Actual completion date (null if ongoing) |
+| `PriorityLevel` | Simple | Low, Medium, High, Urgent |
 | `TaskStatus` | Simple | Execution state (Pending, In_Progress, Completed, Blocked) |
 
 ##### 7. `EQUIPMENT`
@@ -148,19 +150,19 @@ The database covers seven main operational areas:
 | `Model` | Simple | Make and model (CAT 320D) |
 | `SerialNumber` | Candidate Key | Manufacturer serial number |
 | `Category` | Simple | Excavator, Crane, Truck, Paver, Mixer |
-| `AcquisitionType` | Simple | Owned or Leased |
-| `HourlyOperationalCost`| Simple | Cost per operating hour |
+| `Ownership` | Simple | Owned or Rented |
+| `HourlyRate` | Simple | Cost per operating hour |
 | `CurrentStatus` | Simple | Available, Deployed, Under-Maintenance, Retired |
-| `TotalLifetimeHours` | Derived | Total operating hours across all jobs |
+| `TotalRunHours` | Derived | Total operating hours across all jobs |
 
 ##### 8. `SUPPLIER`
 | Attribute | Type | Description |
 | :--- | :--- | :--- |
 | `SupplierID` | Primary Key | Unique vendor identifier |
-| `CompanyName` | Simple | Company name |
-| `TaxIdentificationNo` | Candidate Key | Tax ID number |
+| `CompanyName` | Simple | Registered company name |
+| `TaxCode` | Candidate Key | Official business tax ID |
 | `ContactEmail` | Simple | Sales email |
-| `Phone` | Multi-valued | Contact phone numbers |
+| `ContactPhone` | Multi-valued | Contact phone numbers |
 | `SupplyCategories` | Multi-valued | Product lines (Steel, Cement, Lumber) |
 | `CreditRating` | Simple | Rating grade (A, B, C) |
 
@@ -169,9 +171,10 @@ The database covers seven main operational areas:
 | :--- | :--- | :--- |
 | `MaterialID` | Primary Key | Unique material SKU |
 | `MaterialName` | Simple | Material name (Portland Cement PCB40) |
+| `Category` | Simple | Material classification (Steel, Cement, Aggregate, Piping, Electrical) |
 | `StandardUnit` | Simple | Unit of measurement (Ton, m3, Bag, Piece) |
-| `StandardUnitPrice` | Simple | Reference price per unit |
-| `MinimumReorderLevel` | Simple | Minimum safety stock count |
+| `UnitPrice` | Simple | Reference price per unit |
+| `MinStock` | Simple | Minimum safety stock count |
 
 ##### 10. `PURCHASE_ORDER`
 | Attribute | Type | Description |
@@ -187,8 +190,10 @@ The database covers seven main operational areas:
 | :--- | :--- | :--- |
 | `SubcontractorID` | Primary Key | Unique subcontractor identifier |
 | `CompanyName` | Simple | Registered company name |
-| `TradeSpecialty` | Simple | Specialized trade (Piling, Electrical, HVAC, Facade) |
+| `TaxCode` | Candidate Key | Official business tax ID |
+| `ContactEmail` | Simple | Official contact email |
 | `ContactPhone` | Simple | Primary dispatch phone number |
+| `TradeSpecialty` | Simple | Specialized trade (Piling, Electrical, HVAC, Facade) |
 | `LicenseNumber` | Candidate Key | Trade license number |
 | `SafetyRatingScore` | Simple | Safety score (0.0 to 10.0) |
 
@@ -202,16 +207,18 @@ The database covers seven main operational areas:
 | `OverallScore` | Simple | Evaluation score (0 to 100) |
 | `InspectionResult` | Simple | Audit conclusion (Passed, Conditional_Pass, Failed) |
 | `ViolationNoted` | Simple | Safety issues found |
-| `RemediationDeadline` | Simple | Deadline to fix issues (null if passed) |
+| `FixDeadline` | Simple | Deadline to fix issues (null if passed) |
 
 ##### 13. `INCIDENT_REPORT`
 | Attribute | Type | Description |
 | :--- | :--- | :--- |
 | `IncidentID` | Primary Key | Unique incident case ID |
 | `IncidentTimestamp` | Simple | Date and time of incident |
-| `SeverityLevel` | Simple | Near-Miss, First-Aid, Lost-Time-Injury, Fatal |
+| `IncidentType` | Simple | Event category (Fall, Electrical, Equipment_Collision, Falling_Object) |
+| `IncidentLevel` | Simple | Impact classification (Warning, Minor, Serious, Fatal) |
 | `DamageDescription` | Simple | Injury or equipment damage details |
-| `DaysLostFromWork` | Simple | Work days lost |
+| `LostDays` | Simple | Work days lost due to injury |
+| `Solution` | Simple | Immediate remedial or preventive action taken |
 
 #### Weak entity sets
 
@@ -230,6 +237,7 @@ The database covers seven main operational areas:
 | :--- | :--- | :--- |
 | `PhaseNumber` | Partial Key | Phase sequence number (1, 2, 3...) |
 | `PhaseTitle` | Simple | Phase title (Excavation, Structure) |
+| `StartDate` | Simple | Scheduled start date for this phase |
 | `TargetCompletionDate` | Simple | Target completion date for phase |
 | `PhaseBudget` | Simple | Budget allocated to this phase |
 | `PhaseStatus` | Simple | Pending, Active, Under-Inspection, Accepted |
@@ -343,12 +351,12 @@ The database covers seven main operational areas:
 
 #### 20. `DELIVERY_DISPATCH` (`SUPPLIER` x `MATERIAL` x `PROJECT_SITE`)
 - Ternary relationship (M:N:P)
-- Attributes: `WaybillNumber`, `DeliveryDate`, `DeliveredQuantity`, `ReceiverEmployeeID` (references `EMPLOYEE`), `PO_ID` (references `PURCHASE_ORDER`)
+- Attributes: `DeliveryCode`, `DeliveryDate`, `DeliveredQuantity`, `ReceiverEmployeeID` (references `EMPLOYEE`), `PO_ID` (references `PURCHASE_ORDER`)
 - Meaning: A supplier delivers a specific material to a project site against an approved purchase order on a given date.
 
 #### 21. `ENGAGES_SUBCONTRACTOR` (`PROJECT` to `SUBCONTRACTOR`)
 - Binary M:N
-- Attributes: `ContractAgreementNo`, `ScopeDescription`, `ContractValue`, `RetentionPercentage`, `StartDate`, `CompletionDate`
+- Attributes: `ContractAgreementNo`, `ScopeDescription`, `ContractValue`, `WarrantyHoldRate`, `StartDate`, `CompletionDate`
 - Participation: Both are partial.
 
 #### 22. `CONDUCTS_INSPECTION` (`PROJECT_SITE` to `SAFETY_INSPECTION` to `EMPLOYEE`)
@@ -369,16 +377,20 @@ The database covers seven main operational areas:
 ## 4. Business rules
 
 ### 4.1 Domain constraints
-- Amounts must be positive (> 0): `Salary`, `Budget`, `PhaseBudget`, `ContractValue`, `StandardUnitPrice`, `AgreedUnitPrice`, `Cost`.
-- Quantities must be non-negative (>= 0): `QuantityOrdered`, `DeliveredQuantity`, `CurrentStockQuantity`.
+- Amounts must be positive (> 0): `Salary`, `Budget`, `PhaseBudget`, `ContractValue`, `UnitPrice`, `AgreedUnitPrice`, `Cost`, `HourlyRate`.
+- Quantities and hours must be non-negative (>= 0): `QuantityOrdered`, `DeliveredQuantity`, `CurrentStockQuantity`, `MinStock`, `EstimatedHours`, `ActualHours`, `HoursLogged`, `HoursOperated`, `LostDays`.
 - Status and classification fields use fixed values:
   - `PROJECT.Status`: Planned, In-Progress, Suspended, Completed
+  - `PROJECT_SITE.SiteStatus`: Preparation, Active, Handed_Over
   - `PROJECT_PHASE.PhaseStatus`: Pending, Active, Under-Inspection, Accepted
+  - `TASK.PriorityLevel`: Low, Medium, High, Urgent
   - `TASK.TaskStatus`: Pending, In_Progress, Completed, Blocked
+  - `EQUIPMENT.Ownership`: Owned, Rented
   - `EQUIPMENT.CurrentStatus`: Available, Deployed, Under-Maintenance, Retired
   - `PURCHASE_ORDER.DeliveryStatus`: Issued, Partial_Delivery, Fulfilled, Cancelled
   - `SAFETY_INSPECTION.InspectionResult`: Passed, Conditional_Pass, Failed
-  - `INCIDENT_REPORT.SeverityLevel`: Near-Miss, First-Aid, Lost-Time-Injury, Fatal
+  - `INCIDENT_REPORT.IncidentLevel`: Warning, Minor, Serious, Fatal
+  - `INCIDENT_REPORT.IncidentType`: Fall, Electrical, Equipment_Collision, Falling_Object
 
 ### 4.2 Date and time rules
 - End dates cannot be earlier than start dates (`StartDate <= PlannedEndDate`, `StartDate <= ActualEndDate`).
@@ -404,7 +416,7 @@ These rules cannot be shown with ER notation and will be enforced through trigge
 - Import the standard material catalog with units and benchmark prices.
 - Add new employees, job titles, and verified licenses.
 - Set up new project contracts, site locations, and milestone schedules.
-- Register newly purchased or leased machinery with serial numbers.
+- Register newly purchased or rented machinery with serial numbers.
 
 ### 5.2 Updates
 - Log daily worker hours on specific tasks.
@@ -416,14 +428,14 @@ These rules cannot be shown with ER notation and will be enforced through trigge
 
 ### 5.3 Queries
 - Find heavy equipment by category that is available and not booked for the next two weeks.
-- Check which materials at a specific site have dropped below their reorder threshold.
-- List tasks on the critical path that are past their scheduled end date.
+- Check which materials at a specific site have dropped below their minimum safety stock (`MinStock`).
+- List urgent tasks that are past their scheduled end date.
 - Look up the reporting chain of an employee up to the general director.
-- View active subcontractors on a project with their contracted amounts and remaining retention balances.
+- View active subcontractors on a project with their contracted amounts and remaining warranty hold balances (`WarrantyHoldRate`).
 
 ### 5.4 Reports
 - **Cost vs. budget variance:** Compares the initial project budget against total spending on labor, equipment, materials, and subcontracts.
 - **Earned value analysis:** Computes Planned Value (PV), Earned Value (EV), Actual Cost (AC), Cost Performance Index (CPI), and Schedule Performance Index (SPI).
-- **Site safety report:** Summarizes audit scores, open safety issues, lost work days, and total injury-free hours per site.
+- **Site safety report:** Summarizes audit scores, open safety issues, lost work days (`LostDays`), and total injury-free hours per site.
 - **Subcontractor scorecard:** Ranks subcontractors by delivery speed, work quality, and safety compliance.
-- **Fleet utilization report:** Shows machine run hours against idle hours and maintenance costs per operating hour.
+- **Fleet utilization report:** Shows machine run hours (`TotalRunHours`) against idle hours and hourly rate costs (`HourlyRate`).
