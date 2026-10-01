@@ -7,7 +7,7 @@
   - Lê Anh Minh (B24DCCE180)
   - Ứng Trọng Trình (B24DCCE271)
   - Nguyễn Đinh Anh Quân (B24DCCE222)
-- **Instructor:** Dr. Hoang Dang Hai (`hoand@ptit.edu.vn`)
+- **Instructor:** Dr. Nguyen Dinh Hoa (`hoand@ptit.edu.vn`)
 
 ---
 
