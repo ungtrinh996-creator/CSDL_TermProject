@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="D0" name="Overview">
-        <mxGraphModel dx="2658" dy="1444" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+        <mxGraphModel dx="980" dy="919" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -818,7 +818,7 @@
                         <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
-                <object label="Email [CK]" erd_kind="attr" erd_name="Email" erd_attr="candidate" id="EMPLOYEE.Email">
+                <object label="Email" erd_kind="attr" erd_name="Email" erd_attr="candidate" id="EMPLOYEE.Email">
                     <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" vertex="1">
                         <mxGeometry height="50" width="160" x="1340" y="680" as="geometry"/>
                     </mxCell>
@@ -1033,7 +1033,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="D2" name="Projects">
-        <mxGraphModel dx="3058" dy="1444" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+        <mxGraphModel dx="1053" dy="613" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -1199,12 +1199,12 @@
                 </object>
                 <object label="WORKS_&lt;wbr&gt;ON_&lt;wbr&gt;TASK" erd_kind="rel" erd_name="WORKS_ON_TASK" id="WORKS_ON_TASK">
                     <mxCell parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fontStyle=1;fontSize=10;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1">
-                        <mxGeometry height="90" width="170" x="1650" y="1611" as="geometry"/>
+                        <mxGeometry height="90" width="170" x="1645" y="1610" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="AssignedDate" erd_kind="attr" erd_name="AssignedDate" erd_attr="simple" id="WORKS_ON_TASK.AssignedDate">
                     <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" vertex="1">
-                        <mxGeometry height="50" width="160" x="1620" y="1750" as="geometry"/>
+                        <mxGeometry height="50" width="160" x="1645" y="1750" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="" erd_kind="attr_link" id="e45">
@@ -1387,7 +1387,7 @@
                         <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
-                <object label="TaxCode [CK]" erd_kind="attr" erd_name="TaxCode" erd_attr="candidate" id="CLIENT.TaxCode">
+                <object label="TaxCode" erd_kind="attr" erd_name="TaxCode" erd_attr="candidate" id="CLIENT.TaxCode">
                     <mxCell parent="n8tROxx_BSsYuEuchfre-1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" vertex="1">
                         <mxGeometry height="50" width="160" x="420" y="265" as="geometry"/>
                     </mxCell>
@@ -1690,7 +1690,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="D3" name="Equipment">
-        <mxGraphModel dx="1329" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+        <mxGraphModel dx="1176" dy="1103" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -1948,7 +1948,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="D4" name="Materials &amp; Procurement">
-        <mxGraphModel dx="2299" dy="631" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+        <mxGraphModel dx="1135" dy="289" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -2489,7 +2489,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="D5" name="Subcontracting">
-        <mxGraphModel dx="2299" dy="1031" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+        <mxGraphModel dx="1135" dy="689" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -2672,7 +2672,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="D6" name="Safety">
-        <mxGraphModel dx="1729" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+        <mxGraphModel dx="1106" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
