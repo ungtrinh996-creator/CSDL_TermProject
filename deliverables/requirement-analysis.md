@@ -321,8 +321,9 @@ The database covers seven main operational areas:
 
 #### 13. `EQUIPMENT_DEPLOYMENT` (`EQUIPMENT` to `PROJECT_SITE`)
 - Binary M:N
-- Attributes: `DeploymentStartDate`, `DeploymentEndDate`, `HoursOperated`, `OperatorID` (references `EMPLOYEE`)
+- Attributes: `DeploymentStartDate`, `DeploymentEndDate`, `HoursOperated`
 - Participation: Both `EQUIPMENT` and `PROJECT_SITE` are partial.
+- Aggregation: Each deployment is treated as a higher-level entity so it can take part in `OPERATES` (relationship 26), which records the operator.
 
 #### 14. `HAS_MAINTENANCE` (`EQUIPMENT` to `MAINTENANCE_RECORD`)
 - Identifying 1:N
@@ -351,17 +352,18 @@ The database covers seven main operational areas:
 
 #### 20. `DELIVERY_DISPATCH` (`SUPPLIER` x `MATERIAL` x `PROJECT_SITE`)
 - Ternary relationship (M:N:P)
-- Attributes: `DeliveryCode`, `DeliveryDate`, `DeliveredQuantity`, `ReceiverEmployeeID` (references `EMPLOYEE`), `PO_ID` (references `PURCHASE_ORDER`)
+- Attributes: `DeliveryCode`, `DeliveryDate`, `DeliveredQuantity`
 - Meaning: A supplier delivers a specific material to a project site against an approved purchase order on a given date.
+- Aggregation: Each delivery is treated as a higher-level entity so it can take part in `RECEIVES_DELIVERY` (relationship 27) and `FULFILLS_PO` (relationship 28), which record the receiving employee and the purchase order.
 
 #### 21. `ENGAGES_SUBCONTRACTOR` (`PROJECT` to `SUBCONTRACTOR`)
 - Binary M:N
 - Attributes: `ContractAgreementNo`, `ScopeDescription`, `ContractValue`, `WarrantyHoldRate`, `StartDate`, `CompletionDate`
 - Participation: Both are partial.
 
-#### 22. `CONDUCTS_INSPECTION` (`PROJECT_SITE` to `SAFETY_INSPECTION` to `EMPLOYEE`)
-- `PROJECT_SITE` has 1:N with `SAFETY_INSPECTION`; `EMPLOYEE` has 1:N with `SAFETY_INSPECTION`.
-- Participation: `SAFETY_INSPECTION` is total on both (each inspection records the site and the inspector).
+#### 22. `HAS_INSPECTION` (`PROJECT_SITE` to `SAFETY_INSPECTION`)
+- Binary 1:N
+- Participation: `SAFETY_INSPECTION` is total (each inspection is carried out at exactly one site); `PROJECT_SITE` is partial.
 
 #### 23. `LOGS_INCIDENT` (`PROJECT_SITE` to `INCIDENT_REPORT`)
 - Binary 1:N
@@ -372,13 +374,42 @@ The database covers seven main operational areas:
 - Participation: `EMPLOYEE` is partial; `INCIDENT_REPORT` is partial (an incident may involve an injured worker, or may solely involve property/equipment damage).
 - Rule: An incident report references at most one primary affected employee.
 
+#### 25. `MATERIAL_USAGE` (`TASK` x `MATERIAL` x `PROJECT_SITE`)
+- Ternary relationship (N:M:P)
+- Attributes: `QuantityUsed`, `UsageDate`
+- Meaning: A task consumes a quantity of a material taken from the stock of a specific project site on a given date. The site is part of the relationship because stock is tracked per site (`SITE_INVENTORY`).
+
+#### 26. `OPERATES` (`EMPLOYEE` to `EQUIPMENT_DEPLOYMENT`)
+- Binary 1:N between `EMPLOYEE` and the aggregation of `EQUIPMENT_DEPLOYMENT`
+- Participation: Both sides are partial.
+- Rule: A deployment has at most one operator; an employee may operate many deployments over time. Replaces the former `OperatorID` attribute.
+
+#### 27. `RECEIVES_DELIVERY` (`EMPLOYEE` to `DELIVERY_DISPATCH`)
+- Binary 1:N between `EMPLOYEE` and the aggregation of `DELIVERY_DISPATCH`
+- Participation: `DELIVERY_DISPATCH` is total (every delivery is received by one employee); `EMPLOYEE` is partial.
+- Replaces the former `ReceiverEmployeeID` attribute.
+
+#### 28. `FULFILLS_PO` (`PURCHASE_ORDER` to `DELIVERY_DISPATCH`)
+- Binary 1:N between `PURCHASE_ORDER` and the aggregation of `DELIVERY_DISPATCH`
+- Participation: `DELIVERY_DISPATCH` is total (every delivery is made against one purchase order); `PURCHASE_ORDER` is partial.
+- Replaces the former `PO_ID` attribute.
+
+#### 29. `DAMAGES_EQUIPMENT` (`EQUIPMENT` to `INCIDENT_REPORT`)
+- Binary 1:N
+- Participation: Both sides are partial (an incident may involve no equipment, and most equipment never appears in an incident).
+- Rule: An incident report references at most one primary damaged machine.
+
+#### 30. `PERFORMS_INSPECTION` (`EMPLOYEE` to `SAFETY_INSPECTION`)
+- Binary 1:N
+- Participation: `SAFETY_INSPECTION` is total (each inspection records its inspector); `EMPLOYEE` is partial.
+
 ---
 
 ## 4. Business rules
 
 ### 4.1 Domain constraints
 - Amounts must be positive (> 0): `Salary`, `Budget`, `PhaseBudget`, `ContractValue`, `UnitPrice`, `AgreedUnitPrice`, `Cost`, `HourlyRate`.
-- Quantities and hours must be non-negative (>= 0): `QuantityOrdered`, `DeliveredQuantity`, `CurrentStockQuantity`, `MinStock`, `EstimatedHours`, `ActualHours`, `HoursLogged`, `HoursOperated`, `LostDays`.
+- Quantities and hours must be non-negative (>= 0): `QuantityOrdered`, `DeliveredQuantity`, `CurrentStockQuantity`, `QuantityUsed`, `MinStock`, `EstimatedHours`, `ActualHours`, `HoursLogged`, `HoursOperated`, `LostDays`.
 - Status and classification fields use fixed values:
   - `PROJECT.Status`: Planned, In-Progress, Suspended, Completed
   - `PROJECT_SITE.SiteStatus`: Preparation, Active, Handed_Over
@@ -401,12 +432,14 @@ The database covers seven main operational areas:
 These rules cannot be shown with ER notation and will be enforced through triggers, check constraints, or application logic:
 1. **Phase budget limit:** The sum of all phase budgets in a project cannot exceed the project's estimated budget.
 2. **No overlapping machine bookings:** A piece of equipment cannot be scheduled at two different sites during overlapping dates.
-3. **Operator licensing:** An employee assigned to run heavy equipment must have the required license listed in their certifications.
+3. **Operator licensing:** An employee assigned to run heavy equipment must have the required license listed in their certifications (checked on the `OPERATES` relationship).
 4. **Daily work limit:** A worker cannot log more than 12 hours total across all tasks in a single day.
 5. **No circular task dependencies:** The `PRECEDES` relationship between tasks must not create cycles.
-6. **Stock limit on consumption:** Tasks cannot consume more material than the current stock recorded at that site.
+6. **Stock limit on consumption:** Tasks cannot consume more material than the current stock recorded at that site (checked on the `MATERIAL_USAGE` relationship against `SITE_INVENTORY`).
 7. **Single project limit for directors:** An employee can be the director of only one active project at a time.
 8. **Accident emergency notification:** When an incident involves an employee, the system must trigger a notification looking up their emergency contact in `DEPENDENT` where `IsEmergencyContact = true`.
+9. **Delivery consistency:** The supplier and material of a `DELIVERY_DISPATCH` must match the supplier of the referenced purchase order and a material listed in one of its `PO_ITEM` lines (checked on the `FULFILLS_PO` relationship).
+10. **Department head bootstrap:** `DEPARTMENT_HEAD` is total on the department side while `WORKS_IN_DEPARTMENT` is total on the employee side. When loading data, insert the department with its head empty (or use a deferred constraint), insert the employee, then assign the head.
 
 ---
 
@@ -439,3 +472,57 @@ These rules cannot be shown with ER notation and will be enforced through trigge
 - **Site safety report:** Summarizes audit scores, open safety issues, lost work days (`LostDays`), and total injury-free hours per site.
 - **Subcontractor scorecard:** Ranks subcontractors by delivery speed, work quality, and safety compliance.
 - **Fleet utilization report:** Shows machine run hours (`TotalRunHours`) against idle hours and hourly rate costs (`HourlyRate`).
+
+---
+
+## 6. ERD description
+
+The conceptual design is drawn in Chen notation with cardinality ratios and is stored in `erd.drawio` (seven pages).
+
+### 6.1 Diagram pages
+
+| Page | Content |
+| :--- | :--- |
+| Overview | All 17 entity sets and 30 relationship sets, no attributes, colour-coded by module |
+| Organization | `DEPARTMENT`, `EMPLOYEE`, `DEPENDENT` |
+| Projects | `CLIENT`, `PROJECT`, `PROJECT_SITE`, `PROJECT_PHASE`, `TASK` |
+| Equipment | `EQUIPMENT`, `MAINTENANCE_RECORD`, aggregation of `EQUIPMENT_DEPLOYMENT` |
+| Materials & Procurement | `SUPPLIER`, `MATERIAL`, `PURCHASE_ORDER`, `PO_ITEM`, aggregation of `DELIVERY_DISPATCH` |
+| Subcontracting | `SUBCONTRACTOR` |
+| Safety | `SAFETY_INSPECTION`, `INCIDENT_REPORT` |
+
+Project costs have no entity of their own: `ActualCost` is a derived attribute of `PROJECT` (page Projects).
+
+### 6.2 Notation
+
+| Concept | Symbol |
+| :--- | :--- |
+| Strong / weak entity | Rectangle / double rectangle |
+| Relationship / identifying relationship | Diamond / double diamond |
+| Primary key / partial key | Solid underline / dashed underline |
+| Candidate key | Oval with suffix `[CK]` |
+| Multi-valued attribute | Double oval |
+| Derived attribute | Dashed oval |
+| Composite attribute | Oval linked to child ovals |
+| Total / partial participation | Double line / single line |
+| Cardinality | Labels `1`, `N`, `M`, `P` next to the relationship diamond |
+| Recursive relationship | Two lines to the same entity with role labels |
+| Aggregation | Dashed box around a relationship set (on the Equipment and Materials & Procurement pages also its participating entities); other relationships attach to the box |
+| Relationship attribute | Oval attached to the diamond |
+
+### 6.3 Entities repeated on other pages
+
+An entity shown outside its owning page is drawn as a normal rectangle with only its key attribute and a `(see <page name>)` note.
+
+| Entity | Defined on | Repeated on |
+| :--- | :--- | :--- |
+| `EMPLOYEE` | Organization | Projects, Equipment, Materials & Procurement, Safety |
+| `DEPARTMENT` | Organization | Projects |
+| `PROJECT` | Projects | Materials & Procurement, Subcontracting |
+| `PROJECT_SITE` | Projects | Equipment, Materials & Procurement, Safety |
+| `TASK` | Projects | Materials & Procurement |
+| `EQUIPMENT` | Equipment | Safety |
+
+### 6.4 Constraints not shown in the ERD
+
+See §4.3 (rules 1 to 10).
