@@ -1,9 +1,9 @@
 <mxfile host="65bd71144e">
     <diagram id="D0" name="Overview">
-        <mxGraphModel dx="1524" dy="800" grid="0" gridSize="10" guides="1" tooltips="0" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+        <mxGraphModel dx="3040" dy="2888" grid="0" gridSize="10" guides="1" tooltips="0" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
             <root>
-                <mxCell id="0" />
-                <mxCell id="1" parent="0" />
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
                 <object label="DEPARTMENT" erd_kind="entity" erd_name="DEPARTMENT" erd_shared="" id="DEPARTMENT">
                     <mxCell parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1;" vertex="1">
                         <mxGeometry height="60" width="150" x="640" y="70" as="geometry"/>
@@ -233,7 +233,7 @@
                     <mxCell edge="1" parent="1" source="EMPLOYEE" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;strokeWidth=1;" target="DEPARTMENT_HEAD">
                         <mxGeometry relative="1" x="0.6" as="geometry">
                             <Array as="points">
-                                <mxPoint x="495" y="360" />
+                                <mxPoint x="495" y="360"/>
                             </Array>
                         </mxGeometry>
                     </mxCell>
@@ -242,7 +242,7 @@
                     <mxCell edge="1" parent="1" source="DEPARTMENT" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;shape=link;strokeWidth=1;" target="DEPARTMENT_HEAD">
                         <mxGeometry relative="1" x="0.6" as="geometry">
                             <Array as="points">
-                                <mxPoint x="495" y="100" />
+                                <mxPoint x="495" y="100"/>
                             </Array>
                         </mxGeometry>
                     </mxCell>
@@ -261,8 +261,8 @@
                     <mxCell edge="1" parent="1" source="EMPLOYEE" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;strokeWidth=1;" target="SUPERVISES">
                         <mxGeometry relative="1" x="0.6" as="geometry">
                             <Array as="points">
-                                <mxPoint x="520" y="610" />
-                                <mxPoint x="200" y="610" />
+                                <mxPoint x="520" y="610"/>
+                                <mxPoint x="200" y="610"/>
                             </Array>
                         </mxGeometry>
                     </mxCell>
@@ -271,7 +271,7 @@
                     <mxCell edge="1" parent="1" source="EMPLOYEE" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;strokeWidth=1;" target="SUPERVISES">
                         <mxGeometry relative="1" x="0.6" as="geometry">
                             <Array as="points">
-                                <mxPoint x="520" y="710" />
+                                <mxPoint x="520" y="710"/>
                             </Array>
                         </mxGeometry>
                     </mxCell>
@@ -300,7 +300,7 @@
                     <mxCell edge="1" parent="1" source="DEPARTMENT" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;strokeWidth=1;" target="DEPARTMENT_SPONSORS_PROJECT">
                         <mxGeometry relative="1" x="0.6" as="geometry">
                             <Array as="points">
-                                <mxPoint x="975" y="100" />
+                                <mxPoint x="975" y="100"/>
                             </Array>
                         </mxGeometry>
                     </mxCell>
@@ -309,7 +309,7 @@
                     <mxCell edge="1" parent="1" source="PROJECT" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;shape=link;strokeWidth=1;" target="DEPARTMENT_SPONSORS_PROJECT">
                         <mxGeometry relative="1" x="0.6" as="geometry">
                             <Array as="points">
-                                <mxPoint x="975" y="400" />
+                                <mxPoint x="975" y="400"/>
                             </Array>
                         </mxGeometry>
                     </mxCell>
@@ -328,7 +328,7 @@
                     <mxCell edge="1" parent="1" source="PROJECT" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;shape=link;strokeWidth=1;" target="HAS_SITES">
                         <mxGeometry relative="1" x="0.6" as="geometry">
                             <Array as="points">
-                                <mxPoint x="1535" y="780" />
+                                <mxPoint x="1535" y="780"/>
                             </Array>
                         </mxGeometry>
                     </mxCell>
@@ -357,7 +357,7 @@
                     <mxCell edge="1" parent="1" source="TASK" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;shape=link;strokeWidth=1;" target="CONTAINS_TASKS">
                         <mxGeometry relative="1" x="0.6" as="geometry">
                             <Array as="points">
-                                <mxPoint x="890" y="965" />
+                                <mxPoint x="890" y="965"/>
                             </Array>
                         </mxGeometry>
                     </mxCell>
@@ -371,8 +371,8 @@
                     <mxCell edge="1" parent="1" source="TASK" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;strokeWidth=1;" target="PRECEDES">
                         <mxGeometry relative="1" x="0.6" as="geometry">
                             <Array as="points">
-                                <mxPoint x="1000" y="1120" />
-                                <mxPoint x="1000" y="1265" />
+                                <mxPoint x="1000" y="1120"/>
+                                <mxPoint x="1000" y="1265"/>
                             </Array>
                         </mxGeometry>
                     </mxCell>
@@ -381,7 +381,7 @@
                     <mxCell edge="1" parent="1" source="EMPLOYEE" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;strokeWidth=1;" target="WORKS_ON_TASK">
                         <mxGeometry relative="1" x="0.6" as="geometry">
                             <Array as="points">
-                                <mxPoint x="845" y="640" />
+                                <mxPoint x="845" y="640"/>
                             </Array>
                         </mxGeometry>
                     </mxCell>
@@ -400,7 +400,7 @@
                     <mxCell edge="1" parent="1" source="PROJECT_SITE" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;strokeWidth=1;" target="EQUIPMENT_DEPLOYMENT">
                         <mxGeometry relative="1" x="0.6" as="geometry">
                             <Array as="points">
-                                <mxPoint x="2245" y="1130" />
+                                <mxPoint x="2245" y="1130"/>
                             </Array>
                         </mxGeometry>
                     </mxCell>
@@ -463,7 +463,7 @@
                     <mxCell edge="1" parent="1" source="PROJECT_SITE" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;strokeWidth=1;" target="SITE_INVENTORY">
                         <mxGeometry relative="1" x="0.6" as="geometry">
                             <Array as="points">
-                                <mxPoint x="1920" y="838" />
+                                <mxPoint x="1920" y="838"/>
                             </Array>
                         </mxGeometry>
                     </mxCell>
@@ -482,7 +482,7 @@
                     <mxCell edge="1" parent="1" source="MATERIAL" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;strokeWidth=1;" target="DELIVERY_DISPATCH">
                         <mxGeometry relative="1" x="0.6" as="geometry">
                             <Array as="points">
-                                <mxPoint x="1990" y="730" />
+                                <mxPoint x="1990" y="730"/>
                             </Array>
                         </mxGeometry>
                     </mxCell>
@@ -510,7 +510,7 @@
                     <mxCell edge="1" parent="1" source="PROJECT_SITE" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;strokeWidth=1;" target="HAS_INSPECTION">
                         <mxGeometry relative="1" x="0.6" as="geometry">
                             <Array as="points">
-                                <mxPoint x="1440" y="1200" />
+                                <mxPoint x="1440" y="1200"/>
                             </Array>
                         </mxGeometry>
                     </mxCell>
@@ -544,8 +544,8 @@
                     <mxCell edge="1" parent="1" source="EMPLOYEE" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;strokeWidth=1;" target="INVOLVES_EMPLOYEE">
                         <mxGeometry relative="1" x="0.6" as="geometry">
                             <Array as="points">
-                                <mxPoint x="560" y="960" />
-                                <mxPoint x="560" y="1484" />
+                                <mxPoint x="560" y="960"/>
+                                <mxPoint x="560" y="1484"/>
                             </Array>
                         </mxGeometry>
                     </mxCell>
@@ -574,8 +574,8 @@
                     <mxCell edge="1" parent="1" source="MATERIAL" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;strokeWidth=1;" target="MATERIAL_USAGE">
                         <mxGeometry relative="1" x="0.6" as="geometry">
                             <Array as="points">
-                                <mxPoint x="2560" y="730" />
-                                <mxPoint x="2560" y="1055" />
+                                <mxPoint x="2560" y="730"/>
+                                <mxPoint x="2560" y="1055"/>
                             </Array>
                         </mxGeometry>
                     </mxCell>
@@ -584,7 +584,7 @@
                     <mxCell edge="1" parent="1" source="PROJECT_SITE" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;strokeWidth=1;" target="MATERIAL_USAGE">
                         <mxGeometry relative="1" x="0.6" as="geometry">
                             <Array as="points">
-                                <mxPoint x="2245" y="930" />
+                                <mxPoint x="2245" y="930"/>
                             </Array>
                         </mxGeometry>
                     </mxCell>
@@ -593,10 +593,10 @@
                     <mxCell edge="1" parent="1" source="EMPLOYEE" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;strokeWidth=1;" target="OPERATES">
                         <mxGeometry relative="1" x="0.6" as="geometry">
                             <Array as="points">
-                                <mxPoint x="480" y="966" />
-                                <mxPoint x="480" y="1321" />
+                                <mxPoint x="480" y="966"/>
+                                <mxPoint x="480" y="1321"/>
                             </Array>
-                            <mxPoint x="702.6923076923076" y="580" as="sourcePoint" />
+                            <mxPoint x="702.6923076923076" y="580" as="sourcePoint"/>
                         </mxGeometry>
                     </mxCell>
                 </object>
@@ -609,7 +609,7 @@
                     <mxCell edge="1" parent="1" source="EMPLOYEE" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;strokeWidth=1;" target="RECEIVES_DELIVERY">
                         <mxGeometry relative="1" x="0.6" as="geometry">
                             <Array as="points">
-                                <mxPoint x="970" y="635" />
+                                <mxPoint x="970" y="635"/>
                             </Array>
                         </mxGeometry>
                     </mxCell>
@@ -659,10 +659,10 @@
         </mxGraphModel>
     </diagram>
     <diagram id="D1" name="Organization">
-        <mxGraphModel dx="1720" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+        <mxGraphModel dx="2416" dy="1313" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
             <root>
-                <mxCell id="0" />
-                <mxCell id="1" parent="0" />
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
                 <object label="EMPLOYEE" erd_kind="entity" erd_name="EMPLOYEE" erd_shared="" id="EMPLOYEE">
                     <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1;" vertex="1">
                         <mxGeometry height="60" width="150" x="1300" y="500" as="geometry"/>
@@ -957,7 +957,7 @@
                     <mxCell edge="1" parent="1" source="EMPLOYEE" style="endArrow=none;html=1;rounded=1;labelBackgroundColor=default;fontStyle=1;strokeWidth=1;" target="SUPERVISES">
                         <mxGeometry relative="1" x="0.6" as="geometry">
                             <Array as="points">
-                                <mxPoint x="1310" y="330" />
+                                <mxPoint x="1310" y="330"/>
                             </Array>
                         </mxGeometry>
                     </mxCell>
@@ -966,7 +966,7 @@
                     <mxCell edge="1" parent="1" source="EMPLOYEE" style="endArrow=none;html=1;rounded=1;labelBackgroundColor=default;fontStyle=1;strokeWidth=1;" target="SUPERVISES">
                         <mxGeometry relative="1" x="0.6" as="geometry">
                             <Array as="points">
-                                <mxPoint x="1440" y="330" />
+                                <mxPoint x="1440" y="330"/>
                             </Array>
                         </mxGeometry>
                     </mxCell>
@@ -1035,8 +1035,8 @@
     <diagram id="D2" name="Projects">
         <mxGraphModel dx="2120" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
             <root>
-                <mxCell id="0" />
-                <mxCell id="1" parent="0" />
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
                 <object label="PROJECT" erd_kind="entity" erd_name="PROJECT" erd_shared="" id="PROJECT">
                     <mxCell parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1;" vertex="1">
                         <mxGeometry height="60" width="150" x="1040" y="600" as="geometry"/>
@@ -1255,7 +1255,7 @@
                 <object label="1" erd_kind="link" erd_card="1" erd_total="1" erd_role="" id="e53">
                     <mxCell edge="1" parent="1" source="PROJECT" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;shape=link;strokeWidth=1;" target="DIRECTS_PROJECT">
                         <mxGeometry relative="1" x="0.6" as="geometry">
-                            <Array as="points" />
+                            <Array as="points"/>
                         </mxGeometry>
                     </mxCell>
                 </object>
@@ -1293,7 +1293,7 @@
                     <mxCell edge="1" parent="1" source="TASK" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;strokeWidth=1;" target="PRECEDES">
                         <mxGeometry relative="1" x="0.6" as="geometry">
                             <Array as="points">
-                                <mxPoint x="830" y="1610" />
+                                <mxPoint x="830" y="1610"/>
                             </Array>
                         </mxGeometry>
                     </mxCell>
@@ -1302,7 +1302,7 @@
                     <mxCell edge="1" parent="1" source="TASK" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;strokeWidth=1;" target="PRECEDES">
                         <mxGeometry relative="1" x="0.6" as="geometry">
                             <Array as="points">
-                                <mxPoint x="830" y="1700" />
+                                <mxPoint x="830" y="1700"/>
                             </Array>
                         </mxGeometry>
                     </mxCell>
@@ -1310,7 +1310,7 @@
                 <object label="M" erd_kind="link" erd_card="M" erd_total="0" erd_role="" id="e62">
                     <mxCell edge="1" parent="1" source="EMPLOYEE" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;strokeWidth=1;" target="WORKS_ON_TASK">
                         <mxGeometry relative="1" x="0.6" as="geometry">
-                            <Array as="points" />
+                            <Array as="points"/>
                         </mxGeometry>
                     </mxCell>
                 </object>
@@ -1693,16 +1693,16 @@
     <diagram id="D3" name="Equipment">
         <mxGraphModel dx="1416" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
             <root>
-                <mxCell id="0" />
-                <mxCell id="1" parent="0" />
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
                 <object label="" erd_kind="agg" erd_name="EQUIPMENT_DEPLOYMENT" id="agg:EQUIPMENT_DEPLOYMENT">
                     <mxCell parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;strokeWidth=2;" vertex="1">
-                        <mxGeometry height="130" width="970" x="670" y="465" as="geometry" />
+                        <mxGeometry height="130" width="970" x="670" y="465" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="EQUIPMENT" erd_kind="entity" erd_name="EQUIPMENT" erd_shared="" id="EQUIPMENT">
                     <mxCell parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1">
-                        <mxGeometry height="60" width="150" x="695" y="500" as="geometry" />
+                        <mxGeometry height="60" width="150" x="695" y="500" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="EquipmentID" erd_kind="attr" erd_name="EquipmentID" erd_attr="key" id="EQUIPMENT.EquipmentID">
@@ -1712,7 +1712,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e1">
                     <mxCell edge="1" parent="1" source="EQUIPMENT" style="endArrow=none;html=1;rounded=0;" target="EQUIPMENT.EquipmentID">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="Model" erd_kind="attr" erd_name="Model" erd_attr="simple" id="EQUIPMENT.Model">
@@ -1722,7 +1722,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e2">
                     <mxCell edge="1" parent="1" source="EQUIPMENT" style="endArrow=none;html=1;rounded=0;" target="EQUIPMENT.Model">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="SerialNumber [CK]" erd_kind="attr" erd_name="SerialNumber" erd_attr="candidate" id="EQUIPMENT.SerialNumber">
@@ -1732,7 +1732,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e3">
                     <mxCell edge="1" parent="1" source="EQUIPMENT" style="endArrow=none;html=1;rounded=0;" target="EQUIPMENT.SerialNumber">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="Category" erd_kind="attr" erd_name="Category" erd_attr="simple" id="EQUIPMENT.Category">
@@ -1742,7 +1742,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e4">
                     <mxCell edge="1" parent="1" source="EQUIPMENT" style="endArrow=none;html=1;rounded=0;" target="EQUIPMENT.Category">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="Ownership" erd_kind="attr" erd_name="Ownership" erd_attr="simple" id="EQUIPMENT.Ownership">
@@ -1752,7 +1752,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e5">
                     <mxCell edge="1" parent="1" source="EQUIPMENT" style="endArrow=none;html=1;rounded=0;" target="EQUIPMENT.Ownership">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="HourlyRate" erd_kind="attr" erd_name="HourlyRate" erd_attr="simple" id="EQUIPMENT.HourlyRate">
@@ -1762,7 +1762,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e6">
                     <mxCell edge="1" parent="1" source="EQUIPMENT" style="endArrow=none;html=1;rounded=0;" target="EQUIPMENT.HourlyRate">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="CurrentStatus" erd_kind="attr" erd_name="CurrentStatus" erd_attr="simple" id="EQUIPMENT.CurrentStatus">
@@ -1772,7 +1772,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e7">
                     <mxCell edge="1" parent="1" source="EQUIPMENT" style="endArrow=none;html=1;rounded=0;" target="EQUIPMENT.CurrentStatus">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="TotalRunHours" erd_kind="attr" erd_name="TotalRunHours" erd_attr="derived" id="EQUIPMENT.TotalRunHours">
@@ -1782,12 +1782,12 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e8">
                     <mxCell edge="1" parent="1" source="EQUIPMENT" style="endArrow=none;html=1;rounded=0;" target="EQUIPMENT.TotalRunHours">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="PROJECT_&lt;wbr&gt;SITE&lt;br&gt;&lt;i style=&quot;font-weight:normal;font-size:10px&quot;&gt;(see Projects)&lt;/i&gt;" erd_kind="entity" erd_name="PROJECT_SITE" erd_shared="D2" id="PROJECT_SITE">
                     <mxCell parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;" vertex="1">
-                        <mxGeometry height="60" width="150" x="1470" y="500" as="geometry" />
+                        <mxGeometry height="60" width="150" x="1470" y="500" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="SiteID" erd_kind="attr" erd_name="SiteID" erd_attr="key" id="PROJECT_SITE.SiteID">
@@ -1797,12 +1797,12 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e9">
                     <mxCell edge="1" parent="1" source="PROJECT_SITE" style="endArrow=none;html=1;rounded=0;" target="PROJECT_SITE.SiteID">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="EQUIPMENT_&lt;wbr&gt;DEPLOYMENT" erd_kind="rel" erd_name="EQUIPMENT_DEPLOYMENT" id="EQUIPMENT_DEPLOYMENT">
                     <mxCell parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fontStyle=1;fontSize=10;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1">
-                        <mxGeometry height="75" width="170" x="1010" y="492.5" as="geometry" />
+                        <mxGeometry height="75" width="170" x="1010" y="492.5" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="DeploymentStartDate" erd_kind="attr" erd_name="DeploymentStartDate" erd_attr="simple" id="EQUIPMENT_DEPLOYMENT.DeploymentStartDate">
@@ -1812,7 +1812,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e10">
                     <mxCell edge="1" parent="1" source="EQUIPMENT_DEPLOYMENT" style="endArrow=none;html=1;rounded=0;" target="EQUIPMENT_DEPLOYMENT.DeploymentStartDate">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="DeploymentEndDate" erd_kind="attr" erd_name="DeploymentEndDate" erd_attr="simple" id="EQUIPMENT_DEPLOYMENT.DeploymentEndDate">
@@ -1822,7 +1822,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e11">
                     <mxCell edge="1" parent="1" source="EQUIPMENT_DEPLOYMENT" style="endArrow=none;html=1;rounded=0;" target="EQUIPMENT_DEPLOYMENT.DeploymentEndDate">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="HoursOperated" erd_kind="attr" erd_name="HoursOperated" erd_attr="simple" id="EQUIPMENT_DEPLOYMENT.HoursOperated">
@@ -1832,32 +1832,32 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e12">
                     <mxCell edge="1" parent="1" source="EQUIPMENT_DEPLOYMENT" style="endArrow=none;html=1;rounded=0;" target="EQUIPMENT_DEPLOYMENT.HoursOperated">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="EMPLOYEE&lt;br&gt;&lt;i style=&quot;font-weight:normal;font-size:10px&quot;&gt;(see Organization)&lt;/i&gt;" erd_kind="entity" erd_name="EMPLOYEE" erd_shared="D1" id="EMPLOYEE">
                     <mxCell parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;" vertex="1">
-                        <mxGeometry height="60" width="150" x="1020" y="180" as="geometry" />
+                        <mxGeometry height="60" width="150" x="1020" y="180" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="EmpID" erd_kind="attr" erd_name="EmpID" erd_attr="key" id="EMPLOYEE.EmpID">
                     <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;fontStyle=4;" vertex="1">
-                        <mxGeometry height="50" width="160" x="1015" y="65" as="geometry" />
+                        <mxGeometry height="50" width="160" x="1015" y="65" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="" erd_kind="attr_link" id="e13">
                     <mxCell edge="1" parent="1" source="EMPLOYEE" style="endArrow=none;html=1;rounded=0;" target="EMPLOYEE.EmpID">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="OPERATES" erd_kind="rel" erd_name="OPERATES" id="OPERATES">
                     <mxCell parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fontStyle=1;fontSize=10;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1">
-                        <mxGeometry height="90" width="170" x="1010" y="310" as="geometry" />
+                        <mxGeometry height="90" width="170" x="1010" y="310" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="MAINTENANCE_&lt;wbr&gt;RECORD" erd_kind="weak" erd_name="MAINTENANCE_RECORD" erd_shared="" id="MAINTENANCE_RECORD">
                     <mxCell parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1">
-                        <mxGeometry height="60" width="150" x="695" y="850" as="geometry" />
+                        <mxGeometry height="60" width="150" x="695" y="850" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="&lt;u style=&quot;text-decoration: underline dashed;&quot;&gt;RecordNumber&lt;/u&gt;" erd_kind="attr" erd_name="RecordNumber" erd_attr="partial" id="MAINTENANCE_RECORD.RecordNumber">
@@ -1867,7 +1867,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e14">
                     <mxCell edge="1" parent="1" source="MAINTENANCE_RECORD" style="endArrow=none;html=1;rounded=0;" target="MAINTENANCE_RECORD.RecordNumber">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="ServiceDate" erd_kind="attr" erd_name="ServiceDate" erd_attr="simple" id="MAINTENANCE_RECORD.ServiceDate">
@@ -1877,7 +1877,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e15">
                     <mxCell edge="1" parent="1" source="MAINTENANCE_RECORD" style="endArrow=none;html=1;rounded=0;" target="MAINTENANCE_RECORD.ServiceDate">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="MaintenanceType" erd_kind="attr" erd_name="MaintenanceType" erd_attr="simple" id="MAINTENANCE_RECORD.MaintenanceType">
@@ -1887,7 +1887,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e16">
                     <mxCell edge="1" parent="1" source="MAINTENANCE_RECORD" style="endArrow=none;html=1;rounded=0;" target="MAINTENANCE_RECORD.MaintenanceType">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="Cost" erd_kind="attr" erd_name="Cost" erd_attr="simple" id="MAINTENANCE_RECORD.Cost">
@@ -1897,7 +1897,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e17">
                     <mxCell edge="1" parent="1" source="MAINTENANCE_RECORD" style="endArrow=none;html=1;rounded=0;" target="MAINTENANCE_RECORD.Cost">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="ServiceVendor" erd_kind="attr" erd_name="ServiceVendor" erd_attr="simple" id="MAINTENANCE_RECORD.ServiceVendor">
@@ -1907,42 +1907,42 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e18">
                     <mxCell edge="1" parent="1" source="MAINTENANCE_RECORD" style="endArrow=none;html=1;rounded=0;" target="MAINTENANCE_RECORD.ServiceVendor">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="HAS_&lt;wbr&gt;MAINTENANCE" erd_kind="idrel" erd_name="HAS_MAINTENANCE" id="HAS_MAINTENANCE">
                     <mxCell parent="1" style="shape=rhombus;double=1;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fontStyle=1;fontSize=10;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1">
-                        <mxGeometry height="90" width="170" x="685" y="660" as="geometry" />
+                        <mxGeometry height="90" width="170" x="685" y="660" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="M" erd_kind="link" erd_card="M" erd_total="0" erd_role="" id="e19">
                     <mxCell edge="1" parent="1" source="EQUIPMENT" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;" target="EQUIPMENT_DEPLOYMENT">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="N" erd_kind="link" erd_card="N" erd_total="0" erd_role="" id="e20">
                     <mxCell edge="1" parent="1" source="PROJECT_SITE" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;" target="EQUIPMENT_DEPLOYMENT">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="1" erd_kind="link" erd_card="1" erd_total="0" erd_role="" id="e21">
                     <mxCell edge="1" parent="1" source="EMPLOYEE" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;" target="OPERATES">
-                        <mxGeometry relative="1" x="0.3" as="geometry" />
+                        <mxGeometry relative="1" x="0.3" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="N" erd_kind="link" erd_card="N" erd_total="0" erd_role="" id="e22">
                     <mxCell edge="1" parent="1" source="EQUIPMENT_DEPLOYMENT" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;" target="OPERATES">
-                        <mxGeometry relative="1" x="0.3" as="geometry" />
+                        <mxGeometry relative="1" x="0.3" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="1" erd_kind="link" erd_card="1" erd_total="0" erd_role="" id="e23">
                     <mxCell edge="1" parent="1" source="EQUIPMENT" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;" target="HAS_MAINTENANCE">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="N" erd_kind="link" erd_card="N" erd_total="1" erd_role="" id="e24">
                     <mxCell edge="1" parent="1" source="MAINTENANCE_RECORD" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;shape=link;" target="HAS_MAINTENANCE">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
             </root>
@@ -1951,16 +1951,16 @@
     <diagram id="D4" name="Materials &amp; Procurement">
         <mxGraphModel dx="3957" dy="1467" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
             <root>
-                <mxCell id="0" />
-                <mxCell id="1" parent="0" />
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
                 <object label="" erd_kind="agg" erd_name="DELIVERY_DISPATCH" id="agg:DELIVERY_DISPATCH">
                     <mxCell parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;strokeWidth=2;" vertex="1">
-                        <mxGeometry height="455" width="1150" x="310" y="1415" as="geometry" />
+                        <mxGeometry height="455" width="1150" x="310" y="1415" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="PURCHASE_&lt;wbr&gt;ORDER" erd_kind="entity" erd_name="PURCHASE_ORDER" erd_shared="" id="PURCHASE_ORDER">
                     <mxCell parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1">
-                        <mxGeometry height="60" width="150" x="600" y="1040" as="geometry" />
+                        <mxGeometry height="60" width="150" x="600" y="1040" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="PO_ID" erd_kind="attr" erd_name="PO_ID" erd_attr="key" id="PURCHASE_ORDER.PO_ID">
@@ -1970,7 +1970,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e1">
                     <mxCell edge="1" parent="1" source="PURCHASE_ORDER" style="endArrow=none;html=1;rounded=0;" target="PURCHASE_ORDER.PO_ID">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="OrderDate" erd_kind="attr" erd_name="OrderDate" erd_attr="simple" id="PURCHASE_ORDER.OrderDate">
@@ -1980,7 +1980,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e2">
                     <mxCell edge="1" parent="1" source="PURCHASE_ORDER" style="endArrow=none;html=1;rounded=0;" target="PURCHASE_ORDER.OrderDate">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="ExpectedDeliveryDate" erd_kind="attr" erd_name="ExpectedDeliveryDate" erd_attr="simple" id="PURCHASE_ORDER.ExpectedDeliveryDate">
@@ -1990,7 +1990,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e3">
                     <mxCell edge="1" parent="1" source="PURCHASE_ORDER" style="endArrow=none;html=1;rounded=0;" target="PURCHASE_ORDER.ExpectedDeliveryDate">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="DeliveryStatus" erd_kind="attr" erd_name="DeliveryStatus" erd_attr="simple" id="PURCHASE_ORDER.DeliveryStatus">
@@ -2000,7 +2000,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e4">
                     <mxCell edge="1" parent="1" source="PURCHASE_ORDER" style="endArrow=none;html=1;rounded=0;" target="PURCHASE_ORDER.DeliveryStatus">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="TotalPOAmount" erd_kind="attr" erd_name="TotalPOAmount" erd_attr="derived" id="PURCHASE_ORDER.TotalPOAmount">
@@ -2010,22 +2010,22 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e5">
                     <mxCell edge="1" parent="1" source="PURCHASE_ORDER" style="endArrow=none;html=1;rounded=0;" target="PURCHASE_ORDER.TotalPOAmount">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="PROJECT&lt;br&gt;&lt;i style=&quot;font-weight:normal;font-size:10px&quot;&gt;(see Projects)&lt;/i&gt;" erd_kind="entity" erd_name="PROJECT" erd_shared="D2" id="PROJECT">
                     <mxCell parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;" vertex="1">
-                        <mxGeometry height="60" width="150" x="600" y="605" as="geometry" />
+                        <mxGeometry height="60" width="150" x="600" y="605" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="ProjectID" erd_kind="attr" erd_name="ProjectID" erd_attr="key" id="PROJECT.ProjectID">
                     <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;fontStyle=4;" vertex="1">
-                        <mxGeometry height="50" width="160" x="790" y="610" as="geometry" />
+                        <mxGeometry height="50" width="160" x="790" y="610" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="" erd_kind="attr_link" id="e6">
                     <mxCell edge="1" parent="1" source="PROJECT" style="endArrow=none;html=1;rounded=0;" target="PROJECT.ProjectID">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="PO_&lt;wbr&gt;ITEM" erd_kind="weak" erd_name="PO_ITEM" erd_shared="" id="PO_ITEM">
@@ -2040,7 +2040,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e7">
                     <mxCell edge="1" parent="1" source="PO_ITEM" style="endArrow=none;html=1;rounded=0;" target="PO_ITEM.LineNumber">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="QuantityOrdered" erd_kind="attr" erd_name="QuantityOrdered" erd_attr="simple" id="PO_ITEM.QuantityOrdered">
@@ -2050,7 +2050,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e8">
                     <mxCell edge="1" parent="1" source="PO_ITEM" style="endArrow=none;html=1;rounded=0;" target="PO_ITEM.QuantityOrdered">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="AgreedUnitPrice" erd_kind="attr" erd_name="AgreedUnitPrice" erd_attr="simple" id="PO_ITEM.AgreedUnitPrice">
@@ -2060,7 +2060,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e9">
                     <mxCell edge="1" parent="1" source="PO_ITEM" style="endArrow=none;html=1;rounded=0;" target="PO_ITEM.AgreedUnitPrice">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="ItemSubtotal" erd_kind="attr" erd_name="ItemSubtotal" erd_attr="derived" id="PO_ITEM.ItemSubtotal">
@@ -2070,12 +2070,12 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e10">
                     <mxCell edge="1" parent="1" source="PO_ITEM" style="endArrow=none;html=1;rounded=0;" target="PO_ITEM.ItemSubtotal">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="SUPPLIER" erd_kind="entity" erd_name="SUPPLIER" erd_shared="" id="SUPPLIER">
                     <mxCell parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1">
-                        <mxGeometry height="60" width="150" x="400" y="1552" as="geometry" />
+                        <mxGeometry height="60" width="150" x="400" y="1552" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="SupplierID" erd_kind="attr" erd_name="SupplierID" erd_attr="key" id="SUPPLIER.SupplierID">
@@ -2085,7 +2085,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e11">
                     <mxCell edge="1" parent="1" source="SUPPLIER" style="endArrow=none;html=1;rounded=0;" target="SUPPLIER.SupplierID">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="CompanyName" erd_kind="attr" erd_name="CompanyName" erd_attr="simple" id="SUPPLIER.CompanyName">
@@ -2095,7 +2095,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e12">
                     <mxCell edge="1" parent="1" source="SUPPLIER" style="endArrow=none;html=1;rounded=0;" target="SUPPLIER.CompanyName">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="TaxCode [CK]" erd_kind="attr" erd_name="TaxCode" erd_attr="candidate" id="SUPPLIER.TaxCode">
@@ -2105,7 +2105,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e13">
                     <mxCell edge="1" parent="1" source="SUPPLIER" style="endArrow=none;html=1;rounded=0;" target="SUPPLIER.TaxCode">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="ContactEmail" erd_kind="attr" erd_name="ContactEmail" erd_attr="simple" id="SUPPLIER.ContactEmail">
@@ -2115,17 +2115,17 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e14">
                     <mxCell edge="1" parent="1" source="SUPPLIER" style="endArrow=none;html=1;rounded=0;" target="SUPPLIER.ContactEmail">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="ContactPhone" erd_kind="attr" erd_name="ContactPhone" erd_attr="multi" id="SUPPLIER.ContactPhone">
                     <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;shape=doubleEllipse;" vertex="1">
-                        <mxGeometry height="50" width="160" x="-60" y="1670" as="geometry" />
+                        <mxGeometry height="50" width="160" x="-60" y="1670" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="" erd_kind="attr_link" id="e15">
                     <mxCell edge="1" parent="1" source="SUPPLIER" style="endArrow=none;html=1;rounded=0;" target="SUPPLIER.ContactPhone">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="SupplyCategories" erd_kind="attr" erd_name="SupplyCategories" erd_attr="multi" id="SUPPLIER.SupplyCategories">
@@ -2135,7 +2135,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e16">
                     <mxCell edge="1" parent="1" source="SUPPLIER" style="endArrow=none;html=1;rounded=0;" target="SUPPLIER.SupplyCategories">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="CreditRating" erd_kind="attr" erd_name="CreditRating" erd_attr="simple" id="SUPPLIER.CreditRating">
@@ -2145,12 +2145,12 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e17">
                     <mxCell edge="1" parent="1" source="SUPPLIER" style="endArrow=none;html=1;rounded=0;" target="SUPPLIER.CreditRating">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="MATERIAL" erd_kind="entity" erd_name="MATERIAL" erd_shared="" id="MATERIAL">
                     <mxCell parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1">
-                        <mxGeometry height="60" width="150" x="1190" y="1552" as="geometry" />
+                        <mxGeometry height="60" width="150" x="1190" y="1552" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="MaterialID" erd_kind="attr" erd_name="MaterialID" erd_attr="key" id="MATERIAL.MaterialID">
@@ -2160,7 +2160,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e18">
                     <mxCell edge="1" parent="1" source="MATERIAL" style="endArrow=none;html=1;rounded=0;" target="MATERIAL.MaterialID">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="MaterialName" erd_kind="attr" erd_name="MaterialName" erd_attr="simple" id="MATERIAL.MaterialName">
@@ -2170,7 +2170,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e19">
                     <mxCell edge="1" parent="1" source="MATERIAL" style="endArrow=none;html=1;rounded=0;" target="MATERIAL.MaterialName">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="Category" erd_kind="attr" erd_name="Category" erd_attr="simple" id="MATERIAL.Category">
@@ -2180,7 +2180,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e20">
                     <mxCell edge="1" parent="1" source="MATERIAL" style="endArrow=none;html=1;rounded=0;" target="MATERIAL.Category">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="StandardUnit" erd_kind="attr" erd_name="StandardUnit" erd_attr="simple" id="MATERIAL.StandardUnit">
@@ -2190,7 +2190,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e21">
                     <mxCell edge="1" parent="1" source="MATERIAL" style="endArrow=none;html=1;rounded=0;" target="MATERIAL.StandardUnit">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="UnitPrice" erd_kind="attr" erd_name="UnitPrice" erd_attr="simple" id="MATERIAL.UnitPrice">
@@ -2200,7 +2200,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e22">
                     <mxCell edge="1" parent="1" source="MATERIAL" style="endArrow=none;html=1;rounded=0;" target="MATERIAL.UnitPrice">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="MinStock" erd_kind="attr" erd_name="MinStock" erd_attr="simple" id="MATERIAL.MinStock">
@@ -2210,12 +2210,12 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e23">
                     <mxCell edge="1" parent="1" source="MATERIAL" style="endArrow=none;html=1;rounded=0;" target="MATERIAL.MinStock">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="PROJECT_&lt;wbr&gt;SITE&lt;br&gt;&lt;i style=&quot;font-weight:normal;font-size:10px&quot;&gt;(see Projects)&lt;/i&gt;" erd_kind="entity" erd_name="PROJECT_SITE" erd_shared="D2" id="PROJECT_SITE">
                     <mxCell parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;" vertex="1">
-                        <mxGeometry height="60" width="150" x="808" y="1750" as="geometry" />
+                        <mxGeometry height="60" width="150" x="808" y="1750" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="SiteID" erd_kind="attr" erd_name="SiteID" erd_attr="key" id="PROJECT_SITE.SiteID">
@@ -2225,42 +2225,42 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e24">
                     <mxCell edge="1" parent="1" source="PROJECT_SITE" style="endArrow=none;html=1;rounded=0;" target="PROJECT_SITE.SiteID">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="DELIVERY_&lt;wbr&gt;DISPATCH" erd_kind="rel" erd_name="DELIVERY_DISPATCH" id="DELIVERY_DISPATCH">
                     <mxCell parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fontStyle=1;fontSize=10;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1">
-                        <mxGeometry height="90" width="170" x="798" y="1537" as="geometry" />
+                        <mxGeometry height="90" width="170" x="798" y="1537" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="DeliveryCode" erd_kind="attr" erd_name="DeliveryCode" erd_attr="simple" id="DELIVERY_DISPATCH.DeliveryCode">
                     <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" vertex="1">
-                        <mxGeometry height="50" width="160" x="638" y="1452" as="geometry" />
+                        <mxGeometry height="50" width="160" x="638" y="1452" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="" erd_kind="attr_link" id="e25">
                     <mxCell edge="1" parent="1" source="DELIVERY_DISPATCH" style="endArrow=none;html=1;rounded=0;" target="DELIVERY_DISPATCH.DeliveryCode">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="DeliveryDate" erd_kind="attr" erd_name="DeliveryDate" erd_attr="simple" id="DELIVERY_DISPATCH.DeliveryDate">
                     <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" vertex="1">
-                        <mxGeometry height="50" width="160" x="802" y="1452" as="geometry" />
+                        <mxGeometry height="50" width="160" x="802" y="1452" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="" erd_kind="attr_link" id="e26">
                     <mxCell edge="1" parent="1" source="DELIVERY_DISPATCH" style="endArrow=none;html=1;rounded=0;" target="DELIVERY_DISPATCH.DeliveryDate">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="DeliveredQuantity" erd_kind="attr" erd_name="DeliveredQuantity" erd_attr="simple" id="DELIVERY_DISPATCH.DeliveredQuantity">
                     <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" vertex="1">
-                        <mxGeometry height="50" width="160" x="968" y="1452" as="geometry" />
+                        <mxGeometry height="50" width="160" x="968" y="1452" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="" erd_kind="attr_link" id="e27">
                     <mxCell edge="1" parent="1" source="DELIVERY_DISPATCH" style="endArrow=none;html=1;rounded=0;" target="DELIVERY_DISPATCH.DeliveredQuantity">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="EMPLOYEE&lt;br&gt;&lt;i style=&quot;font-weight:normal;font-size:10px&quot;&gt;(see Organization)&lt;/i&gt;" erd_kind="entity" erd_name="EMPLOYEE" erd_shared="D1" id="EMPLOYEE">
@@ -2275,47 +2275,47 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e28">
                     <mxCell edge="1" parent="1" source="EMPLOYEE" style="endArrow=none;html=1;rounded=0;" target="EMPLOYEE.EmpID">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="TASK&lt;br&gt;&lt;i style=&quot;font-weight:normal;font-size:10px&quot;&gt;(see Projects)&lt;/i&gt;" erd_kind="entity" erd_name="TASK" erd_shared="D2" id="TASK">
                     <mxCell parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;" vertex="1">
-                        <mxGeometry height="60" width="150" x="1320" y="2246" as="geometry" />
+                        <mxGeometry height="60" width="150" x="1320" y="2246" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="TaskID" erd_kind="attr" erd_name="TaskID" erd_attr="key" id="TASK.TaskID">
                     <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;fontStyle=4;" vertex="1">
-                        <mxGeometry height="50" width="160" x="1080" y="2251" as="geometry" />
+                        <mxGeometry height="50" width="160" x="1080" y="2251" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="" erd_kind="attr_link" id="e29">
                     <mxCell edge="1" parent="1" source="TASK" style="endArrow=none;html=1;rounded=0;" target="TASK.TaskID">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="ISSUES_&lt;wbr&gt;PO" erd_kind="rel" erd_name="ISSUES_PO" id="ISSUES_PO">
                     <mxCell parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fontStyle=1;fontSize=10;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1">
-                        <mxGeometry height="90" width="170" x="590" y="760" as="geometry" />
+                        <mxGeometry height="90" width="170" x="590" y="760" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="SUPPLIES_&lt;wbr&gt;PO" erd_kind="rel" erd_name="SUPPLIES_PO" id="SUPPLIES_PO">
                     <mxCell parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fontStyle=1;fontSize=10;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1">
-                        <mxGeometry height="90" width="170" x="390" y="1162" as="geometry" />
+                        <mxGeometry height="90" width="170" x="390" y="1162" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="CONTAINS_&lt;wbr&gt;ITEM" erd_kind="idrel" erd_name="CONTAINS_ITEM" id="CONTAINS_ITEM">
                     <mxCell parent="1" style="shape=rhombus;double=1;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fontStyle=1;fontSize=10;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1">
-                        <mxGeometry height="90" width="170" x="1080" y="1030" as="geometry" />
+                        <mxGeometry height="90" width="170" x="1080" y="1030" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="ITEM_&lt;wbr&gt;REFERENCES_&lt;wbr&gt;MATERIAL" erd_kind="rel" erd_name="ITEM_REFERENCES_MATERIAL" id="ITEM_REFERENCES_MATERIAL">
                     <mxCell parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fontStyle=1;fontSize=10;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1">
-                        <mxGeometry height="90" width="170" x="1538" y="1252" as="geometry" />
+                        <mxGeometry height="90" width="170" x="1538" y="1252" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="SITE_&lt;wbr&gt;INVENTORY" erd_kind="rel" erd_name="SITE_INVENTORY" id="SITE_INVENTORY">
                     <mxCell parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fontStyle=1;fontSize=10;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1">
-                        <mxGeometry height="90" width="170" x="1520" y="1858" as="geometry" />
+                        <mxGeometry height="90" width="170" x="1520" y="1858" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="CurrentStockQuantity" erd_kind="attr" erd_name="CurrentStockQuantity" erd_attr="simple" id="SITE_INVENTORY.CurrentStockQuantity">
@@ -2325,7 +2325,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e30">
                     <mxCell edge="1" parent="1" source="SITE_INVENTORY" style="endArrow=none;html=1;rounded=0;" target="SITE_INVENTORY.CurrentStockQuantity">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="SafetyReorderQuantity" erd_kind="attr" erd_name="SafetyReorderQuantity" erd_attr="simple" id="SITE_INVENTORY.SafetyReorderQuantity">
@@ -2335,7 +2335,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e31">
                     <mxCell edge="1" parent="1" source="SITE_INVENTORY" style="endArrow=none;html=1;rounded=0;" target="SITE_INVENTORY.SafetyReorderQuantity">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="LastStocktakeDate" erd_kind="attr" erd_name="LastStocktakeDate" erd_attr="simple" id="SITE_INVENTORY.LastStocktakeDate">
@@ -2345,12 +2345,12 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e32">
                     <mxCell edge="1" parent="1" source="SITE_INVENTORY" style="endArrow=none;html=1;rounded=0;" target="SITE_INVENTORY.LastStocktakeDate">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="FULFILLS_&lt;wbr&gt;PO" erd_kind="rel" erd_name="FULFILLS_PO" id="FULFILLS_PO">
                     <mxCell parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fontStyle=1;fontSize=10;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1">
-                        <mxGeometry height="90" width="170" x="798" y="1160" as="geometry" />
+                        <mxGeometry height="90" width="170" x="798" y="1160" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="RECEIVES_&lt;wbr&gt;DELIVERY" erd_kind="rel" erd_name="RECEIVES_DELIVERY" id="RECEIVES_DELIVERY">
@@ -2360,7 +2360,7 @@
                 </object>
                 <object label="MATERIAL_&lt;wbr&gt;USAGE" erd_kind="rel" erd_name="MATERIAL_USAGE" id="MATERIAL_USAGE">
                     <mxCell parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fontStyle=1;fontSize=10;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1">
-                        <mxGeometry height="90" width="170" x="1310" y="2040" as="geometry" />
+                        <mxGeometry height="90" width="170" x="1310" y="2040" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="QuantityUsed" erd_kind="attr" erd_name="QuantityUsed" erd_attr="simple" id="MATERIAL_USAGE.QuantityUsed">
@@ -2370,7 +2370,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e33">
                     <mxCell edge="1" parent="1" source="MATERIAL_USAGE" style="endArrow=none;html=1;rounded=0;" target="MATERIAL_USAGE.QuantityUsed">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="UsageDate" erd_kind="attr" erd_name="UsageDate" erd_attr="simple" id="MATERIAL_USAGE.UsageDate">
@@ -2380,90 +2380,90 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e34">
                     <mxCell edge="1" parent="1" source="MATERIAL_USAGE" style="endArrow=none;html=1;rounded=0;" target="MATERIAL_USAGE.UsageDate">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="1" erd_kind="link" erd_card="1" erd_total="0" erd_role="" id="e35">
                     <mxCell edge="1" parent="1" source="PROJECT" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;" target="ISSUES_PO">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="N" erd_kind="link" erd_card="N" erd_total="1" erd_role="" id="e36">
                     <mxCell edge="1" parent="1" source="PURCHASE_ORDER" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;shape=link;" target="ISSUES_PO">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="1" erd_kind="link" erd_card="1" erd_total="0" erd_role="" id="e37">
                     <mxCell edge="1" parent="1" source="SUPPLIER" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;" target="SUPPLIES_PO">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="N" erd_kind="link" erd_card="N" erd_total="1" erd_role="" id="e38">
                     <mxCell edge="1" parent="1" source="PURCHASE_ORDER" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;shape=link;" target="SUPPLIES_PO">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="1" erd_kind="link" erd_card="1" erd_total="1" erd_role="" id="e39">
                     <mxCell edge="1" parent="1" source="PURCHASE_ORDER" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;shape=link;" target="CONTAINS_ITEM">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="N" erd_kind="link" erd_card="N" erd_total="1" erd_role="" id="e40">
                     <mxCell edge="1" parent="1" source="PO_ITEM" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;shape=link;" target="CONTAINS_ITEM">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="N" erd_kind="link" erd_card="N" erd_total="1" erd_role="" id="e41">
                     <mxCell edge="1" parent="1" source="PO_ITEM" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;shape=link;" target="ITEM_REFERENCES_MATERIAL">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="1" erd_kind="link" erd_card="1" erd_total="0" erd_role="" id="e42">
                     <mxCell edge="1" parent="1" source="MATERIAL" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;" target="ITEM_REFERENCES_MATERIAL">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="M" erd_kind="link" erd_card="M" erd_total="0" erd_role="" id="e43">
                     <mxCell edge="1" parent="1" source="PROJECT_SITE" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;" target="SITE_INVENTORY">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="N" erd_kind="link" erd_card="N" erd_total="0" erd_role="" id="e44">
                     <mxCell edge="1" parent="1" source="MATERIAL" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;" target="SITE_INVENTORY">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="M" erd_kind="link" erd_card="M" erd_total="0" erd_role="" id="e45">
                     <mxCell edge="1" parent="1" source="SUPPLIER" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;" target="DELIVERY_DISPATCH">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="N" erd_kind="link" erd_card="N" erd_total="0" erd_role="" id="e46">
                     <mxCell edge="1" parent="1" source="MATERIAL" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;" target="DELIVERY_DISPATCH">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="P" erd_kind="link" erd_card="P" erd_total="0" erd_role="" id="e47">
                     <mxCell edge="1" parent="1" source="PROJECT_SITE" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;" target="DELIVERY_DISPATCH">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="1" erd_kind="link" erd_card="1" erd_total="0" erd_role="" id="e48">
                     <mxCell edge="1" parent="1" source="PURCHASE_ORDER" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;" target="FULFILLS_PO">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="N" erd_kind="link" erd_card="N" erd_total="1" erd_role="" id="e49">
                     <mxCell edge="1" parent="1" source="agg:DELIVERY_DISPATCH" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;shape=link;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.513;entryY=0.955;entryDx=0;entryDy=0;entryPerimeter=0;" target="FULFILLS_PO">
                         <mxGeometry relative="1" x="0.6" as="geometry">
-                            <mxPoint x="840" y="1400" as="sourcePoint" />
-                            <mxPoint x="849.9995408244048" y="1099.9984783870798" as="targetPoint" />
+                            <mxPoint x="840" y="1400" as="sourcePoint"/>
+                            <mxPoint x="849.9995408244048" y="1099.9984783870798" as="targetPoint"/>
                         </mxGeometry>
                     </mxCell>
                 </object>
                 <object label="1" erd_kind="link" erd_card="1" erd_total="0" erd_role="" id="e50">
                     <mxCell edge="1" parent="1" source="EMPLOYEE" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;" target="RECEIVES_DELIVERY">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="N" erd_kind="link" erd_card="N" erd_total="1" erd_role="" id="e51">
@@ -2476,17 +2476,17 @@
                 </object>
                 <object label="N" erd_kind="link" erd_card="N" erd_total="0" erd_role="" id="e52">
                     <mxCell edge="1" parent="1" source="TASK" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;" target="MATERIAL_USAGE">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="M" erd_kind="link" erd_card="M" erd_total="0" erd_role="" id="e53">
                     <mxCell edge="1" parent="1" source="MATERIAL" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;" target="MATERIAL_USAGE">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="P" erd_kind="link" erd_card="P" erd_total="0" erd_role="" id="e54">
                     <mxCell edge="1" parent="1" source="PROJECT_SITE" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;" target="MATERIAL_USAGE">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
             </root>
@@ -2495,11 +2495,11 @@
     <diagram id="D5" name="Subcontracting">
         <mxGraphModel dx="1667" dy="589" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
             <root>
-                <mxCell id="0" />
-                <mxCell id="1" parent="0" />
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
                 <object id="SUBCONTRACTOR" label="SUBCONTRACTOR" erd_kind="entity" erd_name="SUBCONTRACTOR" erd_shared="">
                     <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-                        <mxGeometry x="180" y="200" width="150" height="60" as="geometry" />
+                        <mxGeometry x="180" y="200" width="150" height="60" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="SubcontractorID" erd_kind="attr" erd_name="SubcontractorID" erd_attr="key" id="SUBCONTRACTOR.SubcontractorID">
@@ -2509,7 +2509,7 @@
                 </object>
                 <object id="e1" label="" erd_kind="attr_link">
                     <mxCell style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="SUBCONTRACTOR" target="SUBCONTRACTOR.SubcontractorID">
-                        <mxGeometry x="-0.6" relative="1" as="geometry" />
+                        <mxGeometry x="-0.6" relative="1" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="CompanyName" erd_kind="attr" erd_name="CompanyName" erd_attr="simple" id="SUBCONTRACTOR.CompanyName">
@@ -2519,7 +2519,7 @@
                 </object>
                 <object id="e2" label="" erd_kind="attr_link">
                     <mxCell style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="SUBCONTRACTOR" target="SUBCONTRACTOR.CompanyName">
-                        <mxGeometry x="-0.6" relative="1" as="geometry" />
+                        <mxGeometry x="-0.6" relative="1" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="TaxCode [CK]" erd_kind="attr" erd_name="TaxCode" erd_attr="candidate" id="SUBCONTRACTOR.TaxCode">
@@ -2529,7 +2529,7 @@
                 </object>
                 <object id="e3" label="" erd_kind="attr_link">
                     <mxCell style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="SUBCONTRACTOR" target="SUBCONTRACTOR.TaxCode">
-                        <mxGeometry x="-0.6" relative="1" as="geometry" />
+                        <mxGeometry x="-0.6" relative="1" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="ContactEmail" erd_kind="attr" erd_name="ContactEmail" erd_attr="simple" id="SUBCONTRACTOR.ContactEmail">
@@ -2539,7 +2539,7 @@
                 </object>
                 <object id="e4" label="" erd_kind="attr_link">
                     <mxCell style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="SUBCONTRACTOR" target="SUBCONTRACTOR.ContactEmail">
-                        <mxGeometry x="-0.6" relative="1" as="geometry" />
+                        <mxGeometry x="-0.6" relative="1" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="ContactPhone" erd_kind="attr" erd_name="ContactPhone" erd_attr="simple" id="SUBCONTRACTOR.ContactPhone">
@@ -2549,7 +2549,7 @@
                 </object>
                 <object id="e5" label="" erd_kind="attr_link">
                     <mxCell style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="SUBCONTRACTOR" target="SUBCONTRACTOR.ContactPhone">
-                        <mxGeometry x="-0.6" relative="1" as="geometry" />
+                        <mxGeometry x="-0.6" relative="1" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="TradeSpecialty" erd_kind="attr" erd_name="TradeSpecialty" erd_attr="simple" id="SUBCONTRACTOR.TradeSpecialty">
@@ -2559,7 +2559,7 @@
                 </object>
                 <object id="e6" label="" erd_kind="attr_link">
                     <mxCell style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="SUBCONTRACTOR" target="SUBCONTRACTOR.TradeSpecialty">
-                        <mxGeometry x="-0.6" relative="1" as="geometry" />
+                        <mxGeometry x="-0.6" relative="1" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="LicenseNumber [CK]" erd_kind="attr" erd_name="LicenseNumber" erd_attr="candidate" id="SUBCONTRACTOR.LicenseNumber">
@@ -2569,7 +2569,7 @@
                 </object>
                 <object id="e7" label="" erd_kind="attr_link">
                     <mxCell style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="SUBCONTRACTOR" target="SUBCONTRACTOR.LicenseNumber">
-                        <mxGeometry x="-0.6" relative="1" as="geometry" />
+                        <mxGeometry x="-0.6" relative="1" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="SafetyRatingScore" erd_kind="attr" erd_name="SafetyRatingScore" erd_attr="simple" id="SUBCONTRACTOR.SafetyRatingScore">
@@ -2579,27 +2579,27 @@
                 </object>
                 <object id="e8" label="" erd_kind="attr_link">
                     <mxCell style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="SUBCONTRACTOR" target="SUBCONTRACTOR.SafetyRatingScore">
-                        <mxGeometry x="-0.6" relative="1" as="geometry" />
+                        <mxGeometry x="-0.6" relative="1" as="geometry"/>
                     </mxCell>
                 </object>
                 <object id="SUBCONTRACT" label="SUBCONTRACT" erd_kind="entity" erd_name="SUBCONTRACT" erd_shared="">
                     <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-                        <mxGeometry x="1035" y="200" width="150" height="60" as="geometry" />
+                        <mxGeometry x="1035" y="200" width="150" height="60" as="geometry"/>
                     </mxCell>
                 </object>
                 <object id="SUBCONTRACT.ContractAgreementNo" label="ContractAgreementNo" erd_kind="attr" erd_name="ContractAgreementNo" erd_attr="key">
                     <mxCell style="ellipse;whiteSpace=wrap;html=1;fontSize=10;fontStyle=4;" vertex="1" parent="1">
-                        <mxGeometry x="865" y="115" width="160" height="50" as="geometry" />
+                        <mxGeometry x="865" y="115" width="160" height="50" as="geometry"/>
                     </mxCell>
                 </object>
                 <object id="e9" label="" erd_kind="attr_link">
                     <mxCell style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="SUBCONTRACT" target="SUBCONTRACT.ContractAgreementNo">
-                        <mxGeometry x="-0.6" relative="1" as="geometry" />
+                        <mxGeometry x="-0.6" relative="1" as="geometry"/>
                     </mxCell>
                 </object>
                 <object id="SUBCONTRACT.ScopeDescription" label="ScopeDescription" erd_kind="attr" erd_name="ScopeDescription" erd_attr="simple">
                     <mxCell style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
-                        <mxGeometry x="1030" y="115" width="160" height="50" as="geometry" />
+                        <mxGeometry x="1030" y="115" width="160" height="50" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="ContractAgreementNo" erd_kind="attr" erd_name="ContractAgreementNo" erd_attr="simple" id="ENGAGES_SUBCONTRACTOR.ContractAgreementNo">
@@ -2609,7 +2609,7 @@
                 </object>
                 <object id="SUBCONTRACT.ContractValue" label="ContractValue" erd_kind="attr" erd_name="ContractValue" erd_attr="simple">
                     <mxCell style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
-                        <mxGeometry x="1195" y="115" width="160" height="50" as="geometry" />
+                        <mxGeometry x="1195" y="115" width="160" height="50" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="ScopeDescription" erd_kind="attr" erd_name="ScopeDescription" erd_attr="simple" id="ENGAGES_SUBCONTRACTOR.ScopeDescription">
@@ -2619,7 +2619,7 @@
                 </object>
                 <object id="SUBCONTRACT.WarrantyHoldRate" label="WarrantyHoldRate" erd_kind="attr" erd_name="WarrantyHoldRate" erd_attr="simple">
                     <mxCell style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
-                        <mxGeometry x="865" y="295" width="160" height="50" as="geometry" />
+                        <mxGeometry x="865" y="295" width="160" height="50" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="ContractValue" erd_kind="attr" erd_name="ContractValue" erd_attr="simple" id="ENGAGES_SUBCONTRACTOR.ContractValue">
@@ -2629,7 +2629,7 @@
                 </object>
                 <object id="SUBCONTRACT.StartDate" label="StartDate" erd_kind="attr" erd_name="StartDate" erd_attr="simple">
                     <mxCell style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
-                        <mxGeometry x="1030" y="295" width="160" height="50" as="geometry" />
+                        <mxGeometry x="1030" y="295" width="160" height="50" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="WarrantyHoldRate" erd_kind="attr" erd_name="WarrantyHoldRate" erd_attr="simple" id="ENGAGES_SUBCONTRACTOR.WarrantyHoldRate">
@@ -2639,7 +2639,7 @@
                 </object>
                 <object id="SUBCONTRACT.CompletionDate" label="CompletionDate" erd_kind="attr" erd_name="CompletionDate" erd_attr="simple">
                     <mxCell style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
-                        <mxGeometry x="1195" y="295" width="160" height="50" as="geometry" />
+                        <mxGeometry x="1195" y="295" width="160" height="50" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="StartDate" erd_kind="attr" erd_name="StartDate" erd_attr="simple" id="ENGAGES_SUBCONTRACTOR.StartDate">
@@ -2649,7 +2649,7 @@
                 </object>
                 <object id="PROJECT" label="PROJECT&lt;br&gt;&lt;i style=&quot;font-weight:normal;font-size:10px&quot;&gt;(see Projects)&lt;/i&gt;" erd_kind="entity" erd_name="PROJECT" erd_shared="D2">
                     <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;" vertex="1" parent="1">
-                        <mxGeometry x="1800" y="200" width="150" height="60" as="geometry" />
+                        <mxGeometry x="1800" y="200" width="150" height="60" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="CompletionDate" erd_kind="attr" erd_name="CompletionDate" erd_attr="simple" id="ENGAGES_SUBCONTRACTOR.CompletionDate">
@@ -2659,37 +2659,37 @@
                 </object>
                 <object id="e15" label="" erd_kind="attr_link">
                     <mxCell style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="PROJECT" target="PROJECT.ProjectID">
-                        <mxGeometry x="-0.6" relative="1" as="geometry" />
+                        <mxGeometry x="-0.6" relative="1" as="geometry"/>
                     </mxCell>
                 </object>
                 <object id="HOLDS_SUBCONTRACT" label="HOLDS_&lt;wbr&gt;SUBCONTRACT" erd_kind="rel" erd_name="HOLDS_SUBCONTRACT">
                     <mxCell style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fontStyle=1;fontSize=10;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-                        <mxGeometry x="598" y="185" width="170" height="90" as="geometry" />
+                        <mxGeometry x="598" y="185" width="170" height="90" as="geometry"/>
                     </mxCell>
                 </object>
                 <object id="LETS_SUBCONTRACT" label="LETS_&lt;wbr&gt;SUBCONTRACT" erd_kind="rel" erd_name="LETS_SUBCONTRACT">
                     <mxCell style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fontStyle=1;fontSize=10;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-                        <mxGeometry x="1408" y="185" width="170" height="90" as="geometry" />
+                        <mxGeometry x="1408" y="185" width="170" height="90" as="geometry"/>
                     </mxCell>
                 </object>
                 <object id="e16" label="1" erd_kind="link" erd_card="1" erd_total="0" erd_role="">
                     <mxCell style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;" edge="1" parent="1" source="SUBCONTRACTOR" target="HOLDS_SUBCONTRACT">
-                        <mxGeometry x="0.6" relative="1" as="geometry" />
+                        <mxGeometry x="0.6" relative="1" as="geometry"/>
                     </mxCell>
                 </object>
                 <object id="e17" label="N" erd_kind="link" erd_card="N" erd_total="1" erd_role="">
                     <mxCell style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;shape=link;" edge="1" parent="1" source="SUBCONTRACT" target="HOLDS_SUBCONTRACT">
-                        <mxGeometry x="0.6" relative="1" as="geometry" />
+                        <mxGeometry x="0.6" relative="1" as="geometry"/>
                     </mxCell>
                 </object>
                 <object id="e18" label="1" erd_kind="link" erd_card="1" erd_total="0" erd_role="">
                     <mxCell style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;" edge="1" parent="1" source="PROJECT" target="LETS_SUBCONTRACT">
-                        <mxGeometry x="0.6" relative="1" as="geometry" />
+                        <mxGeometry x="0.6" relative="1" as="geometry"/>
                     </mxCell>
                 </object>
                 <object id="e19" label="N" erd_kind="link" erd_card="N" erd_total="1" erd_role="">
                     <mxCell style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;shape=link;" edge="1" parent="1" source="SUBCONTRACT" target="LETS_SUBCONTRACT">
-                        <mxGeometry x="0.6" relative="1" as="geometry" />
+                        <mxGeometry x="0.6" relative="1" as="geometry"/>
                     </mxCell>
                 </object>
             </root>
@@ -2698,51 +2698,51 @@
     <diagram id="D6" name="Safety">
         <mxGraphModel dx="1604" dy="560" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
             <root>
-                <mxCell id="0" />
-                <mxCell id="1" parent="0" />
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
                 <object label="SAFETY_&lt;wbr&gt;INSPECTION" erd_kind="entity" erd_name="SAFETY_INSPECTION" erd_shared="" id="SAFETY_INSPECTION">
                     <mxCell parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1">
-                        <mxGeometry height="60" width="150" x="550" y="550" as="geometry" />
+                        <mxGeometry height="60" width="150" x="550" y="550" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="InspectionID" erd_kind="attr" erd_name="InspectionID" erd_attr="key" id="SAFETY_INSPECTION.InspectionID">
                     <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;fontStyle=4;" vertex="1">
-                        <mxGeometry height="50" width="160" x="545" y="660" as="geometry" />
+                        <mxGeometry height="50" width="160" x="545" y="660" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="" erd_kind="attr_link" id="e1">
                     <mxCell edge="1" parent="1" source="SAFETY_INSPECTION" style="endArrow=none;html=1;rounded=0;" target="SAFETY_INSPECTION.InspectionID">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="InspectionDate" erd_kind="attr" erd_name="InspectionDate" erd_attr="simple" id="SAFETY_INSPECTION.InspectionDate">
                     <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" vertex="1">
-                        <mxGeometry height="50" width="160" x="330" y="550" as="geometry" />
+                        <mxGeometry height="50" width="160" x="330" y="550" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="" erd_kind="attr_link" id="e2">
                     <mxCell edge="1" parent="1" source="SAFETY_INSPECTION" style="endArrow=none;html=1;rounded=0;" target="SAFETY_INSPECTION.InspectionDate">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="InspectionType" erd_kind="attr" erd_name="InspectionType" erd_attr="simple" id="SAFETY_INSPECTION.InspectionType">
                     <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" vertex="1">
-                        <mxGeometry height="50" width="160" x="320" y="470" as="geometry" />
+                        <mxGeometry height="50" width="160" x="320" y="470" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="" erd_kind="attr_link" id="e3">
                     <mxCell edge="1" parent="1" source="SAFETY_INSPECTION" style="endArrow=none;html=1;rounded=0;" target="SAFETY_INSPECTION.InspectionType">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="InspectionScope" erd_kind="attr" erd_name="InspectionScope" erd_attr="simple" id="SAFETY_INSPECTION.InspectionScope">
                     <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" vertex="1">
-                        <mxGeometry height="50" width="160" x="380" y="390" as="geometry" />
+                        <mxGeometry height="50" width="160" x="380" y="390" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="" erd_kind="attr_link" id="e4">
                     <mxCell edge="1" parent="1" source="SAFETY_INSPECTION" style="endArrow=none;html=1;rounded=0;" target="SAFETY_INSPECTION.InspectionScope">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="OverallScore" erd_kind="attr" erd_name="OverallScore" erd_attr="simple" id="SAFETY_INSPECTION.OverallScore">
@@ -2752,7 +2752,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e5">
                     <mxCell edge="1" parent="1" source="SAFETY_INSPECTION" style="endArrow=none;html=1;rounded=0;" target="SAFETY_INSPECTION.OverallScore">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="InspectionResult" erd_kind="attr" erd_name="InspectionResult" erd_attr="simple" id="SAFETY_INSPECTION.InspectionResult">
@@ -2762,7 +2762,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e6">
                     <mxCell edge="1" parent="1" source="SAFETY_INSPECTION" style="endArrow=none;html=1;rounded=0;" target="SAFETY_INSPECTION.InspectionResult">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="ViolationNoted" erd_kind="attr" erd_name="ViolationNoted" erd_attr="simple" id="SAFETY_INSPECTION.ViolationNoted">
@@ -2772,7 +2772,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e7">
                     <mxCell edge="1" parent="1" source="SAFETY_INSPECTION" style="endArrow=none;html=1;rounded=0;" target="SAFETY_INSPECTION.ViolationNoted">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="FixDeadline" erd_kind="attr" erd_name="FixDeadline" erd_attr="simple" id="SAFETY_INSPECTION.FixDeadline">
@@ -2782,7 +2782,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e8">
                     <mxCell edge="1" parent="1" source="SAFETY_INSPECTION" style="endArrow=none;html=1;rounded=0;" target="SAFETY_INSPECTION.FixDeadline">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="INCIDENT_&lt;wbr&gt;REPORT" erd_kind="entity" erd_name="INCIDENT_REPORT" erd_shared="" id="INCIDENT_REPORT">
@@ -2797,27 +2797,27 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e9">
                     <mxCell edge="1" parent="1" source="INCIDENT_REPORT" style="endArrow=none;html=1;rounded=0;" target="INCIDENT_REPORT.IncidentID">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="IncidentTimestamp" erd_kind="attr" erd_name="IncidentTimestamp" erd_attr="simple" id="INCIDENT_REPORT.IncidentTimestamp">
                     <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" vertex="1">
-                        <mxGeometry height="50" width="160" x="300" y="1135" as="geometry" />
+                        <mxGeometry height="50" width="160" x="300" y="1135" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="" erd_kind="attr_link" id="e10">
                     <mxCell edge="1" parent="1" source="INCIDENT_REPORT" style="endArrow=none;html=1;rounded=0;" target="INCIDENT_REPORT.IncidentTimestamp">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="IncidentType" erd_kind="attr" erd_name="IncidentType" erd_attr="simple" id="INCIDENT_REPORT.IncidentType">
                     <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" vertex="1">
-                        <mxGeometry height="50" width="160" x="320" y="1230" as="geometry" />
+                        <mxGeometry height="50" width="160" x="320" y="1230" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="" erd_kind="attr_link" id="e11">
                     <mxCell edge="1" parent="1" source="INCIDENT_REPORT" style="endArrow=none;html=1;rounded=0;" target="INCIDENT_REPORT.IncidentType">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="IncidentLevel" erd_kind="attr" erd_name="IncidentLevel" erd_attr="simple" id="INCIDENT_REPORT.IncidentLevel">
@@ -2827,7 +2827,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e12">
                     <mxCell edge="1" parent="1" source="INCIDENT_REPORT" style="endArrow=none;html=1;rounded=0;" target="INCIDENT_REPORT.IncidentLevel">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="DamageDescription" erd_kind="attr" erd_name="DamageDescription" erd_attr="simple" id="INCIDENT_REPORT.DamageDescription">
@@ -2837,7 +2837,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e13">
                     <mxCell edge="1" parent="1" source="INCIDENT_REPORT" style="endArrow=none;html=1;rounded=0;" target="INCIDENT_REPORT.DamageDescription">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="LostDays" erd_kind="attr" erd_name="LostDays" erd_attr="simple" id="INCIDENT_REPORT.LostDays">
@@ -2847,7 +2847,7 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e14">
                     <mxCell edge="1" parent="1" source="INCIDENT_REPORT" style="endArrow=none;html=1;rounded=0;" target="INCIDENT_REPORT.LostDays">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="Solution" erd_kind="attr" erd_name="Solution" erd_attr="simple" id="INCIDENT_REPORT.Solution">
@@ -2857,82 +2857,82 @@
                 </object>
                 <object label="" erd_kind="attr_link" id="e15">
                     <mxCell edge="1" parent="1" source="INCIDENT_REPORT" style="endArrow=none;html=1;rounded=0;" target="INCIDENT_REPORT.Solution">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="PROJECT_&lt;wbr&gt;SITE&lt;br&gt;&lt;i style=&quot;font-weight:normal;font-size:10px&quot;&gt;(see Projects)&lt;/i&gt;" erd_kind="entity" erd_name="PROJECT_SITE" erd_shared="D2" id="PROJECT_SITE">
                     <mxCell parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;" vertex="1">
-                        <mxGeometry height="60" width="150" y="798" as="geometry" />
+                        <mxGeometry height="60" width="150" y="798" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="SiteID" erd_kind="attr" erd_name="SiteID" erd_attr="key" id="PROJECT_SITE.SiteID">
                     <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;fontStyle=4;" vertex="1">
-                        <mxGeometry height="50" width="160" x="-195" y="803" as="geometry" />
+                        <mxGeometry height="50" width="160" x="-195" y="803" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="" erd_kind="attr_link" id="e16">
                     <mxCell edge="1" parent="1" source="PROJECT_SITE" style="endArrow=none;html=1;rounded=0;" target="PROJECT_SITE.SiteID">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="EMPLOYEE&lt;br&gt;&lt;i style=&quot;font-weight:normal;font-size:10px&quot;&gt;(see Organization)&lt;/i&gt;" erd_kind="entity" erd_name="EMPLOYEE" erd_shared="D1" id="EMPLOYEE">
                     <mxCell parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;" vertex="1">
-                        <mxGeometry height="60" width="150" x="1100" y="798" as="geometry" />
+                        <mxGeometry height="60" width="150" x="1100" y="798" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="EmpID" erd_kind="attr" erd_name="EmpID" erd_attr="key" id="EMPLOYEE.EmpID">
                     <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;fontStyle=4;" vertex="1">
-                        <mxGeometry height="50" width="160" x="1285" y="803" as="geometry" />
+                        <mxGeometry height="50" width="160" x="1285" y="803" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="" erd_kind="attr_link" id="e17">
                     <mxCell edge="1" parent="1" source="EMPLOYEE" style="endArrow=none;html=1;rounded=0;" target="EMPLOYEE.EmpID">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="EQUIPMENT&lt;br&gt;&lt;i style=&quot;font-weight:normal;font-size:10px&quot;&gt;(see Equipment)&lt;/i&gt;" erd_kind="entity" erd_name="EQUIPMENT" erd_shared="D3" id="EQUIPMENT">
                     <mxCell parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;" vertex="1">
-                        <mxGeometry height="60" width="150" x="550" y="1370" as="geometry" />
+                        <mxGeometry height="60" width="150" x="550" y="1370" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="EquipmentID" erd_kind="attr" erd_name="EquipmentID" erd_attr="key" id="EQUIPMENT.EquipmentID">
                     <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;fontStyle=4;" vertex="1">
-                        <mxGeometry height="50" width="160" x="735" y="1375" as="geometry" />
+                        <mxGeometry height="50" width="160" x="735" y="1375" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="" erd_kind="attr_link" id="e18">
                     <mxCell edge="1" parent="1" source="EQUIPMENT" style="endArrow=none;html=1;rounded=0;" target="EQUIPMENT.EquipmentID">
-                        <mxGeometry relative="1" x="-0.6" as="geometry" />
+                        <mxGeometry relative="1" x="-0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="HAS_&lt;wbr&gt;INSPECTION" erd_kind="rel" erd_name="HAS_INSPECTION" id="HAS_INSPECTION">
                     <mxCell parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fontStyle=1;fontSize=10;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1">
-                        <mxGeometry height="90" width="170" x="265" y="659" as="geometry" />
+                        <mxGeometry height="90" width="170" x="265" y="659" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="PERFORMS_&lt;wbr&gt;INSPECTION" erd_kind="rel" erd_name="PERFORMS_INSPECTION" id="PERFORMS_INSPECTION">
                     <mxCell parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fontStyle=1;fontSize=10;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1">
-                        <mxGeometry height="90" width="170" x="815" y="659" as="geometry" />
+                        <mxGeometry height="90" width="170" x="815" y="659" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="LOGS_&lt;wbr&gt;INCIDENT" erd_kind="rel" erd_name="LOGS_INCIDENT" id="LOGS_INCIDENT">
                     <mxCell parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fontStyle=1;fontSize=10;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1">
-                        <mxGeometry height="90" width="170" x="265" y="906" as="geometry" />
+                        <mxGeometry height="90" width="170" x="265" y="906" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="INVOLVES_&lt;wbr&gt;EMPLOYEE" erd_kind="rel" erd_name="INVOLVES_EMPLOYEE" id="INVOLVES_EMPLOYEE">
                     <mxCell parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fontStyle=1;fontSize=10;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1">
-                        <mxGeometry height="90" width="170" x="815" y="906" as="geometry" />
+                        <mxGeometry height="90" width="170" x="815" y="906" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="DAMAGES_&lt;wbr&gt;EQUIPMENT" erd_kind="rel" erd_name="DAMAGES_EQUIPMENT" id="DAMAGES_EQUIPMENT">
                     <mxCell parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fontStyle=1;fontSize=10;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1">
-                        <mxGeometry height="90" width="170" x="540" y="1200" as="geometry" />
+                        <mxGeometry height="90" width="170" x="540" y="1200" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="1" erd_kind="link" erd_card="1" erd_total="0" erd_role="" id="e19">
                     <mxCell edge="1" parent="1" source="PROJECT_SITE" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;" target="HAS_INSPECTION">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="N" erd_kind="link" erd_card="N" erd_total="1" erd_role="" id="e20">
@@ -2942,7 +2942,7 @@
                 </object>
                 <object label="1" erd_kind="link" erd_card="1" erd_total="0" erd_role="" id="e21">
                     <mxCell edge="1" parent="1" source="EMPLOYEE" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;" target="PERFORMS_INSPECTION">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="N" erd_kind="link" erd_card="N" erd_total="1" erd_role="" id="e22">
@@ -2952,7 +2952,7 @@
                 </object>
                 <object label="1" erd_kind="link" erd_card="1" erd_total="0" erd_role="" id="e23">
                     <mxCell edge="1" parent="1" source="PROJECT_SITE" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;" target="LOGS_INCIDENT">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="N" erd_kind="link" erd_card="N" erd_total="1" erd_role="" id="e24">
@@ -2962,22 +2962,22 @@
                 </object>
                 <object label="1" erd_kind="link" erd_card="1" erd_total="0" erd_role="" id="e25">
                     <mxCell edge="1" parent="1" source="EMPLOYEE" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;" target="INVOLVES_EMPLOYEE">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="N" erd_kind="link" erd_card="N" erd_total="0" erd_role="" id="e26">
                     <mxCell edge="1" parent="1" source="INCIDENT_REPORT" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;" target="INVOLVES_EMPLOYEE">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="1" erd_kind="link" erd_card="1" erd_total="0" erd_role="" id="e27">
                     <mxCell edge="1" parent="1" source="EQUIPMENT" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;" target="DAMAGES_EQUIPMENT">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="N" erd_kind="link" erd_card="N" erd_total="0" erd_role="" id="e28">
                     <mxCell edge="1" parent="1" source="INCIDENT_REPORT" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=default;fontStyle=1;" target="DAMAGES_EQUIPMENT">
-                        <mxGeometry relative="1" x="0.6" as="geometry" />
+                        <mxGeometry relative="1" x="0.6" as="geometry"/>
                     </mxCell>
                 </object>
             </root>
